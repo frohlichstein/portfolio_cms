@@ -1,0 +1,7 @@
+name = Jfro
+description = Jason Frohlichstein portfolio theme.
+version = 7.26
+core = 7.x
+
+stylesheets[all][] = css/application.css
+scripts[] = js/application.js
