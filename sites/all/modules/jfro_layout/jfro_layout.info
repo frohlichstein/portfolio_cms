@@ -1,0 +1,6 @@
+name = Jfro layout
+description = Custom layout templates and other tricks
+package = Jfro
+core = 7.x
+
+files[] = model.class.php

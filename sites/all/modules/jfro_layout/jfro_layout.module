@@ -1,0 +1,98 @@
+<?php
+
+/**
+ * HOOKS
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function jfro_layout_theme($existing, $type, $theme, $path) {
+  return array(
+    'home' => array('template' => 'home'),
+    'info' => array('template' => 'info'),
+  );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function jfro_layout_menu() {
+  $items['home'] = array(
+    'title' => 'JFro Home',
+    'page callback' => 'jfro_layout_home_callback',
+    'access arguments' => array('access content'),
+  );
+  $items['info'] = array(
+    'title' => 'JFro Info',
+    'page callback' => 'jfro_layout_info_callback',
+    'access arguments' => array('access content'),
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function jfro_layout_preprocess_page(&$variables) {
+  $variables['main_menu'] = render(menu_tree_output(menu_tree_all_data('main-menu')));
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function jfro_layout_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  if($node->type == 'project'){
+    $variables['project'] = new Model($node);
+  }
+}
+
+
+/**
+ * CALLBACKS
+ */
+
+/**
+ * Page callback: home
+ */
+function jfro_layout_home_callback(){
+  $projects = jfro_layout_get_projects();
+  $variables = array(
+    'projects' => $projects
+  );
+  return theme('home', $variables);
+}
+
+/**
+ * Page callback: info
+ */
+function jfro_layout_info_callback(){
+  // $projects = jfro_layout_get_projects();
+  $variables = array(
+    // 'projects' => $projects
+  );
+  return theme('info', $variables);
+}
+
+
+/**
+ * UTILITY
+ */
+
+/**
+ * Return an array of projects
+ * @return array
+ */
+function jfro_layout_get_projects(){
+  $results = views_get_view_result('projects', 'page');
+  $projects = array();
+  foreach($results as $result){
+    $node = node_load($result->nid);
+    $projects[] = new Model($node);
+  }
+
+  return $projects;
+}
+
+?>
