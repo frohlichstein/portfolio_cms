@@ -1,4 +1,4 @@
-# Jason Frohlochstein Drupal CMS
+# Jason Frohlichstein Drupal CMS
 
 ## Local Setup
 
