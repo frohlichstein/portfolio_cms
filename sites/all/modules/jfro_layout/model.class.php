@@ -34,6 +34,9 @@ class Model extends Meta {
     $this->fields = field_info_instances("node", $this->node->type);
     $this->title = $this->title();
     $this->path = $this->path();
+    $this->has_images = $this->has_images();
+    $this->prev = $this->prev();
+    $this->next = $this->next();
 
     foreach($this->fields as $field){
       $type = $field['widget']['type'];
@@ -56,6 +59,32 @@ class Model extends Meta {
     }else{
       return '/' . drupal_get_path_alias('node/' . $this->node->nid);
     }
+  }
+
+  function images($image_style){
+    $images = array();
+    foreach ($this->node->field_project_images['und'] as $image) {
+      $image_markup_array = array(
+        'style_name' => $image_style,
+        'path' => $image['uri'],
+        'width' => NULL,
+        'height' => NULL
+      );
+      $images[] = theme_image_style($image_markup_array);
+    }
+    return $images;
+  }
+
+  function has_images(){
+    return !empty($this->node->field_project_images['und'][0]);
+  }
+
+  function next(){
+    return !empty($this->node->next) ? $this->node->next : FALSE;
+  }
+
+  function prev(){
+    return !empty($this->node->prev) ? $this->node->prev : FALSE;
   }
 
 }

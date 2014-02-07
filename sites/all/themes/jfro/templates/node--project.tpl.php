@@ -1,18 +1,8 @@
-<h1><?php print $project->title; ?></h1>
+<?php // This template file simply determines which partial to render. ?>
+<?php // Edit the partial files to customize the different layouts. ?>
 
-<?php if($project->body): ?>
-<div class="body"><?php print $project->body; ?></div>
+<?php if($project->layout == "vertical"): ?>
+  <?php print theme("project_vertical", array("project" => $project)); ?>
+<?php elseif($project->layout == "horizontal"): ?>
+  <?php print theme("project_horizontal", array("project" => $project)); ?>
 <?php endif; ?>
-
-<?php if($project->link): ?>
-<a href="<?php print $project->link; ?>"><?php print str_replace("http://", "", $project->link); ?></a>
-<?php endif; ?>
-
-<?php if($project->extra_info_1): ?>
-<div class="extra_info_1"><?php print $project->extra_info_1; ?></div>
-<?php endif; ?>
-
-<?php if($project->extra_info_2): ?>
-<div class="extra_info_2"><?php print $project->extra_info_2; ?></div>
-<?php endif; ?>
-

@@ -11,6 +11,10 @@ function jfro_layout_theme($existing, $type, $theme, $path) {
   return array(
     'home' => array('template' => 'home'),
     'info' => array('template' => 'info'),
+    'project_vertical' => array('template' => 'partials/project_vertical'),
+    'project_horizontal' => array('template' => 'partials/project_horizontal'),
+    'project_share' => array('template' => 'partials/project_share'),
+    'project_controls' => array('template' => 'partials/project_controls')
   );
 }
 
@@ -44,6 +48,9 @@ function jfro_layout_preprocess_page(&$variables) {
 function jfro_layout_preprocess_node(&$variables) {
   $node = $variables['node'];
   if($node->type == 'project'){
+    $controls = jfro_return_project_controls($node->nid);
+    $node->next = $controls['next'];
+    $node->prev = $controls['prev'];
     $variables['project'] = new Model($node);
   }
 }
@@ -93,6 +100,27 @@ function jfro_layout_get_projects(){
   }
 
   return $projects;
+}
+
+/**
+ * Returns an assoc array of the next and previous node paths
+ * @param $node - node object
+ * @return array - with 'prev' and 'next' keys
+ */
+function jfro_return_project_controls($nid){
+  $controls = array();
+  $results = array();
+  foreach(views_get_view_result('projects', 'page') as $project){
+    $results[] = $project->nid;
+  }
+  $current = array_search($nid, $results);
+  $next = isset($results[$current + 1]) ? $results[$current + 1] : FALSE;
+  $prev = isset($results[$current - 1]) ? $results[$current - 1] : FALSE;
+  if($next) $next = '/' . drupal_get_path_alias('node/' . $next);
+  if($prev) $prev = '/' . drupal_get_path_alias('node/' . $prev);
+  $controls['next'] = $next;
+  $controls['prev'] = $prev;
+  return $controls;
 }
 
 ?>
