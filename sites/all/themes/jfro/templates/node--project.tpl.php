@@ -15,3 +15,4 @@
 <?php if($project->extra_info_2): ?>
 <div class="extra_info_2"><?php print $project->extra_info_2; ?></div>
 <?php endif; ?>
+
