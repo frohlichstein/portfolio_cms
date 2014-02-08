@@ -8,13 +8,3 @@
 4. Duplicate the file: `/sites/default/default.settings.php` and rename it to `settings.php`. Add the following line to the file: `ini_set('memory_limit', '128M');`
 5. Do a nice hard `drush cc all`
 6. Do the Drupey jig
-
-## User Logins
-
-**Root**  
-User: root  
-Pass: Jfro!2012
-
-**Editor**  
-User: editor  
-Pass: Jfro!2012
