@@ -74,7 +74,7 @@
  Global CSS for ALL menu types
 ******************************/
 
-body {
+body.editor-menu {
   margin-top: 30px!important;
 }
 

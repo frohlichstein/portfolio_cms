@@ -19,6 +19,9 @@ function editor_menu_init(){
  * Implements hook_page_build().
  */
 function editor_menu_page_build(&$page){
+  global $user;
+  if (!in_array('editor', $user->roles)) return;
+
   $path = drupal_get_path('module', 'editor_menu');
   drupal_add_js($path . '/js/editor_menu.js');
 
@@ -29,6 +32,15 @@ function editor_menu_page_build(&$page){
   $markup .= '<div class="user-menu">' . render(menu_tree_output(menu_tree_all_data('user-menu'))) . '</div>';
   $markup .= '</div>';
   $page['page_bottom']['editor_menu']['#markup'] = $markup;
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function editor_menu_preprocess_html(&$variables) {
+  if(!empty($variables['page']['page_bottom']['editor_menu'])){
+    $variables['classes_array'][] = "editor-menu";
+  }
 }
 
 ?>

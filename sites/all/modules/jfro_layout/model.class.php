@@ -11,7 +11,7 @@ class Meta
   public function generate_field_value($field, $args = NULL){
     $value = '';
     $field_array = $this->node->$field['field_name'];
-    // check for any image widget
+    // image widget
     if(in_array($field['widget']['type'], array('image_image', 'image_miw'))){
       $value = theme_image_style(array(
         'style_name' => $args[0],
@@ -19,8 +19,15 @@ class Meta
         'width' => NULL,
         'height' => NULL
       ));
+    // media widget
+    }else if($field['widget']['type'] == 'media_generic'){
+      if(empty($field_array['und'][0]['file'])) return '';
+      $file = file_view_file($field_array['und'][0]['file']);
+      // dpm($file);
+      $value = theme($file['#theme'], $file);
+    // all other widgets
     }else{
-      $value = $field_array['und'][0]['value'];
+      $value = !empty($field_array['und'][0]['value']) ? $field_array['und'][0]['value'] : '';
     }
     return $value;
   }
@@ -31,6 +38,7 @@ class Model extends Meta {
 
   function __construct($node){
     $this->node = $node;
+    $this->node_view = node_view($node);
     $this->fields = field_info_instances("node", $this->node->type);
     $this->title = $this->title();
     $this->path = $this->path();

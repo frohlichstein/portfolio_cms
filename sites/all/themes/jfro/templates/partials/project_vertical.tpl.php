@@ -18,7 +18,11 @@
 <div class="extra_info_2"><?php print $project->extra_info_2; ?></div>
 <?php endif; ?>
 
-<?php print theme("project_share", array("project" => $project)); ?>
+<div class="share"><?php print theme("project_share", array("project" => $project)); ?></div>
+
+<?php if($project->video): ?>
+<div class="video"><?php print $project->video; ?></div>
+<?php endif; ?>
 
 <?php if($project->has_images): ?>
   <?php foreach($project->images('medium') as $image): ?>
