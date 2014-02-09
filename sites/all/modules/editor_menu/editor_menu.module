@@ -29,7 +29,7 @@ function editor_menu_page_build(&$page){
   $user_block = module_invoke('system', 'block_view', 'user-menu');
   $markup = '<div id="fixed">';
   $markup .= render($editor_block['content']);
-  $markup .= '<div class="user-menu">' . render(menu_tree_output(menu_tree_all_data('user-menu'))) . '</div>';
+  $markup .= editor_menu_user_links();
   $markup .= '</div>';
   $page['page_bottom']['editor_menu']['#markup'] = $markup;
 }
@@ -41,6 +41,19 @@ function editor_menu_preprocess_html(&$variables) {
   if(!empty($variables['page']['page_bottom']['editor_menu'])){
     $variables['classes_array'][] = "editor-menu";
   }
+}
+
+/**
+ * Returns the markup for the user links.
+ */
+function editor_menu_user_links(){
+  global $user;
+  $markup = '<div class="user-menu">';
+  $markup .= '<ul>';
+  $markup .= '<li><a href="/user/' . $user->uid . '/edit">Hey, ' . $user->name . '</a></li>';
+  $markup .= '<li><a href="/user/logout">Logout</a></li>';
+  $markup .= '</ul>';
+  return $markup;
 }
 
 ?>
