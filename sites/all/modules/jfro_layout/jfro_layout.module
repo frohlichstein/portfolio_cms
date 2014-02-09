@@ -1,5 +1,8 @@
 <?php
 
+define('INSTAGRAM_CLIENT_ID', '2347c43e8896443b85bb8af2777f4fbe');
+define('INSTAGRAM_CLIENT_SECRET', 'f528239013d04f4a96011899dc3e6b86');
+
 /**
  * HOOKS
  */
@@ -75,9 +78,8 @@ function jfro_layout_home_callback(){
  * Page callback: info
  */
 function jfro_layout_info_callback(){
-  // $projects = jfro_layout_get_projects();
   $variables = array(
-    // 'projects' => $projects
+    'instagram_photos' => instagram_recent()
   );
   return theme('info', $variables);
 }
@@ -121,6 +123,20 @@ function jfro_return_project_controls($nid){
   $controls['next'] = $next;
   $controls['prev'] = $prev;
   return $controls;
+}
+
+/**
+ * Returns an array of Instagram photo URLs.
+ * @return array
+ */
+function instagram_recent(){
+  $instagram_photos = array();
+  $response = drupal_http_request("https://api.instagram.com/v1/users/17426721/media/recent/?count=5&client_id=" . INSTAGRAM_CLIENT_ID);
+  $json = json_decode($response->data);
+  foreach($json->data as $photo){
+    $instagram_photos[] = $photo->images->thumbnail->url;
+  }
+  return $instagram_photos;
 }
 
 ?>

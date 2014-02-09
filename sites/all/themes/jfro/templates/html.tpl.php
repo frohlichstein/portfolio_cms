@@ -7,7 +7,7 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
-<body>
+<body class="<?php print $classes; ?>">
   <?php print $page; ?>
   <?php print $page_bottom; ?>
 </body>
