@@ -1,0 +1,41 @@
+.wrapper {
+    @include cf;
+	position: relative;
+/* 	max-width: 1400px; */
+	margin: 0 30px;
+/* 	padding: 0 30px; */
+}
+
+.header .wrapper {
+    padding: 30px 0 20px;
+    border-bottom: 2px solid #000;
+}
+
+.main .wrapper {
+    padding: 40px 0 20px;
+}
+
+.footer {
+}
+
+.left {	float: left; }
+.right { float: right; }
+
+/*
+.grid {
+    margin: 0 -10px;
+}
+
+.grid .item {
+    float: left;
+}
+
+.grid .item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.two-col .item {
+    width: 48%;
+    margin-right: 4%;
+}
+*/

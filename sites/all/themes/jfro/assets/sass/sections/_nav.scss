@@ -1,0 +1,56 @@
+.nav a {
+    display: block;
+    padding: 12px 0;
+    font: 700 14px/1em $freight;
+	text-transform: uppercase;
+}
+
+.menu {
+    float: left;
+}
+
+.menu.show {
+    display: block;
+}
+
+.menu li {
+    float: left;
+    margin-right: 30px;
+}
+
+.menu li:last-child {
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.menu .active {
+	border-bottom: 2px solid #000;
+}
+
+.nav .categories {
+    float: right;
+}
+
+.nav .cat-open {
+    font-size: 18px;
+    padding: 8px 0 0;
+}
+
+.cat-nav {
+    display: none;
+}
+
+.cat-nav li {
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.cat-nav li:not(:first-child):after {
+    content: "//";
+    position: absolute;
+    top: 11px;
+    left: -4px;
+    font: 700 14px/1em "freight-sans-pro", Helvetica, Arial, sans-serif;
+}

@@ -1,0 +1,279 @@
+
+.class-hero {
+    overflow: hidden;
+    position: relative;
+	background: $red;
+	color: #fff;
+	.wrapper {
+	    width: 100%;
+	    max-width: 1600px;
+	    position: relative;
+    	padding: $base*1.5 0;
+    
+        @include bp-max-width($large) {
+            width: 94%;
+        }
+        @include bp-max-width($small) {
+            width: 92%;
+            padding: 32px 0;
+        }
+	}
+}
+
+.hero-wave-borders {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $wave-top, $wave-bottom;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35.71%;
+    height: 100%;
+    background: $class-hero;
+    background-size: cover;
+
+    @include bp-max-width($large) {
+        display: none;
+    }
+}
+
+.class-hero-content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    padding: 0 30px 0 37%;
+    
+    @include bp-max-width($large) {
+        padding: 0;
+    }
+}
+
+.class-hero-content .class-title {
+    margin-bottom: 12px;
+}
+
+.class-hero-content .provider {
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.class-hero-content .social-buttons {
+    @include cf;
+    margin-bottom: $base;
+    li {
+        float: left;
+        margin-right: 20px;
+    }
+    .yelp-btn {
+        display: inline-block;
+        padding: 2px 6px;
+        background: #fff;
+        border-radius: 3px;
+    }
+
+    @include bp-max-width($small) {
+        margin-bottom: 12px;
+    }
+}
+
+.twitter-btn,
+.facebook-btn {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    [class*="icon-"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .count {
+        position: relative;
+        padding: 3px 4px;
+        background: #fff;
+        border-radius: 3px;
+        color: #000;
+        font-weight: $bold;
+        line-height: 1;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 7px;
+            left: -5px;
+            z-index: 10;
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid #fff;
+        }
+    }
+}
+
+.twitter-btn {
+    padding-left: 36px;
+}
+
+.facebook-btn {
+    padding-left: 24px;
+}
+
+.class-containter {
+    position: relative;
+    .class-info {
+        padding-left: 180px;
+        
+        a {
+            color: $dk-green;
+        }
+
+        @include bp-max-width($small) {
+            margin-bottom: $base;
+            padding-left: 0;
+        }
+    }
+}
+
+.class-containter .class-pricing {
+    top: 0;
+    left: 0;
+    color: $dk-green;
+
+    @include bp-max-width($small) {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        padding: 8px;
+        p {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+        .price {
+            font-size: 32px;
+            line-height: 1;
+        }
+        .length {
+            margin-bottom: 0;
+        }
+    }
+    @include bp-max-width($small) {
+        clear: both;
+        p {
+            display: block;
+            margin: 0 0 4px;
+            vertical-align: inherit;
+        }
+        .length {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+.get-directions {
+    color: $dk-green;
+    font-family: $kult;
+    line-height: 1;
+    font-weight: $bold;
+    .icon-link {
+        display: inline-block;
+    }
+}
+
+
+/** Main Content ========**/
+
+.class-main .grid {
+    @include bp-max-width($large) {
+        margin: 0;
+    }
+}
+
+.class-main .col-2-3 {
+    @include bp-max-width($large) {
+        float: none;
+        width: 100%;
+        margin-bottom: $base;
+        padding: 0;
+    }
+}
+
+.class-main .col-1-3 {
+    @include bp-max-width($large) {
+        float: none;
+        width: 100%;
+        margin-bottom: 0;
+        padding: 0;
+    }
+}
+
+
+/** Sidebar Photos ========**/
+
+.photos-block {
+    text-align: center;
+    .thumb {
+        margin-bottom: $base;
+    }
+}
+
+
+/** About Provider ========**/
+
+.about-provider .wrapper {
+    @include wave-divider-top;
+    padding: $base*3 0 0;
+
+    @include bp-max-width($small) {
+        padding-top: 32px;
+    }
+}
+
+.provider-content {
+    position: relative;
+    .body {
+        max-width: 846px;
+        padding-left: 220px;
+        
+        @include bp-max-width($medium) {
+            padding-left: 0;
+        }
+    }
+}
+
+.provider-content .provider-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include bp-max-width($medium) {
+        position: static;
+        top: auto;
+        left: auto;
+        float: right;
+        margin: 0 0 $base $base;
+    }
+}
+
+
+/** Activities Grid ========**/
+
+.additional-classes .wrapper {
+    padding-bottom: 32px;
+    
+    @include bp-max-width($medium) {
+        padding-bottom: 12px;
+    }
+}
+
+.additional-classes .section-title {
+    font-family: $proxima;
+}
+
+

@@ -1,0 +1,49 @@
+.home .main .wrapper {
+    margin: 0 20px;
+}
+
+.four-col {
+    width: 100%;
+}
+
+.four-col .item {
+    width: 25%;
+    padding: 0 10px;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.thumb {
+    display: block;
+    position: relative;
+}
+
+.thumb img {
+    width: 100%;
+}
+
+.thumb .project-title {
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    opacity: 0;
+    display: table;
+    padding: 0 10px;
+    background: rgba(255,255,255,0.95);
+	-webkit-transition: all 0.15s ease-in-out;
+	-moz-transition: all 0.15s ease-in-out;
+	-ms-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+}
+
+.thumb:hover .project-title {
+    opacity: 1;
+}
+
+.thumb .project-title h2 {
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center; 
+}

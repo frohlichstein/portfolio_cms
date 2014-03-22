@@ -1,0 +1,198 @@
+
+.admin-page {
+    @include wave-divider-top;
+}
+
+.admin-page .left-sidebar {
+    top: 30px;
+    
+    .mobile-menu-btn {
+        display: none;
+    }
+
+    @include bp-max-width($medium) {
+        position: absolute;
+        top: 42px;
+        right: 3%;
+        .mobile-menu-btn {
+            display: inline-block;
+            background: $lt-grey;
+            color: $dk-green;
+            .icon-menu .bar {
+                background: $dk-green;
+            }
+        }
+        .admin-nav {
+            display: none;
+            position: absolute;
+            top: 36px;
+            right: 0;
+            padding: 5px 18px;
+            background: $lt-grey;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            &.show {
+                display: block;
+            }
+        }
+    }
+    @include bp-max-width($xsmall) {
+        top: 32px;
+    }
+}
+
+.admin-nav a {
+    position: relative;
+    display: block;
+    padding: 10px 10px 10px 40px;
+    color: $clay;
+    font: $book 20px/1em $kult;
+    
+    &:hover, &.active {
+        color: $red;
+    }
+}
+
+.title-block {
+    @include cf;
+/*     @include wave-divider-bottom; */
+    margin-bottom: $base;
+/*     padding: 0 0 $base*1.5; */
+    
+    .provider-logo {
+        float: left;
+        margin-right: 18px;
+        border: 1px solid $lt-grey;
+
+        @include bp-max-width($xsmall) {
+            width: 80px;
+        }
+    }
+    .section-title {
+        padding-left: 120px;
+
+        @include bp-max-width($xsmall) {
+            padding-left: 100px;
+        }
+    }
+}
+
+.stats-block {
+    @include cf;
+    position: relative;
+    margin-bottom: 32px;
+    background: $lt-grey;
+    [class*="col-"] {
+        float: left;
+        padding: 0;
+
+        @include bp-max-width($large) {
+            @include cf;
+            float: none;
+            width: 100%;
+            border-bottom: 1px solid $md-grey;
+        }
+    }
+}
+
+.stats-block .col-1 {
+    width: 22%;
+
+    @include bp-max-width(1100px) {
+        width: 18%;
+    }
+    @include bp-max-width($large) {
+        width: auto;
+    }
+}
+
+.stats-block .col-2 {
+    width: 32%;
+
+    @include bp-max-width($large) {
+        width: auto;
+    }
+}
+
+.stats-block .col-3 {
+    width: 46%;
+
+    @include bp-max-width(1100px) {
+        width: 50%;
+    }
+    @include bp-max-width($large) {
+        width: auto;
+    }
+}
+
+.stats-block .col-4 {
+    position: absolute;
+    right: 18px;
+    bottom: 26px;
+
+    @include bp-max-width($xlarge) {
+        bottom: 18px;
+    }
+    @include bp-max-width($large) {
+        width: auto;
+        position: static;
+        right: auto;
+        bottom: auto;
+        padding: 10px 18px;
+    }
+}
+
+.stats-block .label {
+    padding: 5px 18px 7px;
+    background: $dk-green;
+    color: $clay;
+    font: $semi 15px/1em $kult;
+    text-transform: uppercase;
+
+    @include bp-max-width($large) {
+        float: left;
+        padding: 10px 0 10px 18px;
+        background: none;
+        color: $dk-green;
+        line-height: 24px;
+    }
+    @include bp-max-width($tiny) {
+        float: none;
+        padding-bottom: 0;
+    }
+}
+
+.stats-block .stat {
+    padding: 10px 18px;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: $bold;
+
+    @include bp-max-width($xlarge) {
+        font-size: 37px;
+    }
+    @include bp-max-width($large) {
+        float: right;
+        font-size: 24px;
+    }
+    @include bp-max-width($tiny) {
+        float: none;
+        padding-top: 5px;
+    }
+}
+
+.col-2 .stat,
+.col-3 .stat {
+    color: $green;
+}
+
+.stats-block .col-4 .red-link {
+    font-size: 18px;
+    font-weight: $semi;
+
+    @include bp-max-width($large) {
+        font-size: 16px;
+    }
+}
+

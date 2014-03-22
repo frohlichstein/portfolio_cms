@@ -1,0 +1,26 @@
+a {
+    outline: none;
+	color: #000;
+	text-decoration: none;
+	-webkit-transition: all 0.15s ease-in-out;
+	-moz-transition: all 0.15s ease-in-out;
+	-ms-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+}
+
+a:hover {
+	color: $grey;
+}
+
+.btn {
+	display: inline-block;
+	padding: 2px 12px 3px;
+	border-radius: 5px;
+	background: #81ceeb;
+	color: #fff;
+}
+
+.btn:hover {
+	background: #62a7c1;
+	color: #fff;
+}

@@ -1,0 +1,54 @@
+
+$proxima: "proxima-nova", Helvetica, arial, sans-serif;
+$freight: "freight-sans-pro", Helvetica, Arial, sans-serif;
+
+$light: 300;
+$book: 400;
+$semi: 600;
+$bold: 700;
+
+$base: 22px;
+
+body {
+    font: $book 1em/1.5em $proxima;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: $freight;
+	font-weight: $bold;
+	line-height: 1;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 60px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 15px;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+.meta-info {
+    font-size: 12px;
+}

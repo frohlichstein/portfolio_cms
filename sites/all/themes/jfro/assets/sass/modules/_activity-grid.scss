@@ -1,0 +1,91 @@
+
+.activity-grid {
+    margin-bottom: 0;
+}
+
+.activity-grid [class*="col-"] {
+    position: relative;
+    margin-bottom: $base;
+
+    @include bp-max-width($small) {
+        max-width: 480px;
+        margin: 0 auto $base;
+    }
+}
+
+.activity-grid [class*="col-"] a {
+    display: block;
+    border: 1px solid $trans-grey;
+    &:hover {
+        border-color: $clay;
+    }
+}
+
+.activity-grid .thumb  {
+    position: relative;
+    img {
+        width: 100%;
+    }
+    &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        width: 100%;
+        height: 12px;
+        background: $arrow-border;
+    }
+}
+
+.activity-grid .info {
+    min-height: 200px;
+    padding: 15px;
+
+    @include bp-max-width($small) {
+        min-height: inherit;
+    }
+}
+
+.activity-grid .meta-data {
+    @include cf;
+    padding: 15px 15px 10px;
+    border-top: 1px dotted $trans-grey;
+}
+
+.info .title {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: $light;
+    letter-spacing: -1px;
+}
+
+.info p {
+    color: $dk-green;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.info .title {
+	@include single-transition(all, 0.1s, ease-in);
+    color: $dk-green;
+    &:hover {
+        color: $green;
+    }
+}
+
+.time-age {
+    float: left;
+    color: $clay;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.activity-grid .action-link {
+	@include single-transition(all, 0.1s, ease-in);
+    float: right;
+    margin-top: 6px;
+    &:hover {
+        color: $dk-green;
+    }
+}

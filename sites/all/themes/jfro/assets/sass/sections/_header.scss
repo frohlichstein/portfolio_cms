@@ -1,0 +1,20 @@
+
+.logo {
+	float: left;
+	font-size: 16px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.logo .quote {
+    color: #aaa;
+	font: 400 italic 14px/1em $proxima;
+	text-transform: none;
+}
+
+.hello {
+    float: right;
+    color: #aaa;
+    font: 700 12px/1.25em $freight;
+    text-transform: uppercase;
+}
