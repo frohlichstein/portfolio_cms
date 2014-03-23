@@ -34,11 +34,14 @@
     background: #ccc;
 }
 
-.project-credits h3,
 .project-credits p,
 .project-awards p {
     font-size: 12px;
     line-height: 1.4em;
+}
+
+.project-credits h3 {
+    font: 700 12px/1.4em $proxima;
 }
 
 
@@ -88,11 +91,11 @@
 }
 
 .project-nav .back-to-thumbs,
-.project-nav .up {
+.project-nav .scroll-top {
     left: 50%;
 }
 
-.project-nav .up {
+.project-nav .scroll-top {
     width: 21px;
     height: 12px;
     margin-left: -10px;

@@ -23,9 +23,13 @@
 	padding-right: 0;
 }
 
-.menu .active {
+.menu .active,
+.node-type-project .first a {
 	border-bottom: 2px solid #000;
 }
+
+
+/** Cat Nav **/
 
 .nav .categories {
     float: right;

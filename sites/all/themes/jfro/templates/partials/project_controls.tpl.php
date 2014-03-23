@@ -7,7 +7,7 @@
     <a class="next" href="<?php print $project->next; ?>"></a>
     <?php endif; ?>
     
-    <a href="" class="up"></a>
+    <a href="" class="scroll-top"></a>
     <a class="back-to-thumbs" href="/"></a>
 </div>
 

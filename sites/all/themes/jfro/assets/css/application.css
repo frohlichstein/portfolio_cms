@@ -185,7 +185,7 @@ em {
 
 /* line 8, ../sass/global/_base.scss */
 .header .wrapper {
-  padding: 30px 0 20px;
+  padding: 20px 0;
   border-bottom: 2px solid #000;
 }
 
@@ -424,16 +424,20 @@ a:hover {
   background: #ccc;
 }
 
-/* line 39, ../sass/pages/_projects.scss */
-.project-credits h3,
+/* line 38, ../sass/pages/_projects.scss */
 .project-credits p,
 .project-awards p {
   font-size: 12px;
   line-height: 1.4em;
 }
 
+/* line 43, ../sass/pages/_projects.scss */
+.project-credits h3 {
+  font: 700 12px/1.4em "proxima-nova", Helvetica, arial, sans-serif;
+}
+
 /** PROJECT NAV ================**/
-/* line 47, ../sass/pages/_projects.scss */
+/* line 50, ../sass/pages/_projects.scss */
 .project-image-grid .col {
   float: left;
   margin-bottom: 20px;
@@ -441,26 +445,26 @@ a:hover {
 }
 
 /** PROJECT NAV ================**/
-/* line 58, ../sass/pages/_projects.scss */
+/* line 61, ../sass/pages/_projects.scss */
 .project-nav {
   position: relative;
   height: 40px;
   text-align: center;
 }
 
-/* line 64, ../sass/pages/_projects.scss */
+/* line 67, ../sass/pages/_projects.scss */
 .project-nav a {
   position: absolute;
   display: block;
   background: url(../images/sprite.svg) no-repeat;
 }
 
-/* line 70, ../sass/pages/_projects.scss */
+/* line 73, ../sass/pages/_projects.scss */
 .project-nav a:hover {
   opacity: 0.5;
 }
 
-/* line 75, ../sass/pages/_projects.scss */
+/* line 78, ../sass/pages/_projects.scss */
 .project-nav .previous,
 .project-nav .next {
   bottom: 0;
@@ -468,32 +472,32 @@ a:hover {
   height: 21px;
 }
 
-/* line 81, ../sass/pages/_projects.scss */
+/* line 84, ../sass/pages/_projects.scss */
 .project-nav .previous {
   left: 0;
 }
 
-/* line 85, ../sass/pages/_projects.scss */
+/* line 88, ../sass/pages/_projects.scss */
 .project-nav .next {
   right: 0;
   background-position: -14px 0;
 }
 
-/* line 91, ../sass/pages/_projects.scss */
+/* line 94, ../sass/pages/_projects.scss */
 .project-nav .back-to-thumbs,
-.project-nav .up {
+.project-nav .scroll-top {
   left: 50%;
 }
 
-/* line 95, ../sass/pages/_projects.scss */
-.project-nav .up {
+/* line 98, ../sass/pages/_projects.scss */
+.project-nav .scroll-top {
   width: 21px;
   height: 12px;
   margin-left: -10px;
   background-position: 0 -23px;
 }
 
-/* line 102, ../sass/pages/_projects.scss */
+/* line 105, ../sass/pages/_projects.scss */
 .project-nav .back-to-thumbs {
   bottom: 0;
   width: 20px;
@@ -624,28 +628,30 @@ a:hover {
   padding-right: 0;
 }
 
-/* line 26, ../sass/sections/_nav.scss */
-.menu .active {
+/* line 27, ../sass/sections/_nav.scss */
+.menu .active,
+.node-type-project .first a {
   border-bottom: 2px solid #000;
 }
 
-/* line 30, ../sass/sections/_nav.scss */
+/** Cat Nav **/
+/* line 34, ../sass/sections/_nav.scss */
 .nav .categories {
   float: right;
 }
 
-/* line 34, ../sass/sections/_nav.scss */
+/* line 38, ../sass/sections/_nav.scss */
 .nav .cat-open {
   font-size: 18px;
   padding: 8px 0 0;
 }
 
-/* line 39, ../sass/sections/_nav.scss */
+/* line 43, ../sass/sections/_nav.scss */
 .cat-nav {
   display: none;
 }
 
-/* line 43, ../sass/sections/_nav.scss */
+/* line 47, ../sass/sections/_nav.scss */
 .cat-nav li {
   position: relative;
   float: left;
@@ -653,7 +659,7 @@ a:hover {
   padding-left: 20px;
 }
 
-/* line 50, ../sass/sections/_nav.scss */
+/* line 54, ../sass/sections/_nav.scss */
 .cat-nav li:not(:first-child):after {
   content: "//";
   position: absolute;
