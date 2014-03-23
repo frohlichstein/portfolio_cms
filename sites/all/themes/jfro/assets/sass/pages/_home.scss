@@ -19,6 +19,7 @@
 }
 
 .thumb .title-block {
+    @include single-transition(all, 0.15s, ease-in);
     position: absolute;
     top: 2px;
     right: 2px;
@@ -26,23 +27,13 @@
     left: 2px;
     opacity: 0;
     display: block;
-    padding: 0 10px;
     background: rgba(255,255,255,0.95);
     text-align: center;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-ms-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	&:before {
-    	content: "";
-    	display: inline-block;
-    	height: 100%;
-    	vertical-align: middle;
-	}
 	h2 {
-    	display: inline-block;
-    	vertical-align: middle;
-	}
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 }
 
 .thumb:hover .title-block {

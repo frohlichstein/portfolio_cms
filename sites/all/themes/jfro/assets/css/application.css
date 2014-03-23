@@ -347,7 +347,7 @@ select {
   width: 100%;
   max-width: 340px;
   padding: 8px 12px;
-  background: rgba(170, 170, 170, 0.2);
+  background: rgba(170, 170, 170, 0.1);
   border: 1px solid #aaaaaa;
   font: 400 1em/1em "proxima-nova", Helvetica, arial, sans-serif;
 }
@@ -426,6 +426,10 @@ input[type="submit"]:hover, button:hover {
 
 /* line 21, ../sass/pages/_home.scss */
 .thumb .title-block {
+  -webkit-transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
   position: absolute;
   top: 2px;
   right: 2px;
@@ -433,28 +437,17 @@ input[type="submit"]:hover, button:hover {
   left: 2px;
   opacity: 0;
   display: block;
-  padding: 0 10px;
   background: rgba(255, 255, 255, 0.95);
   text-align: center;
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -ms-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
 }
-/* line 36, ../sass/pages/_home.scss */
-.thumb .title-block:before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-/* line 42, ../sass/pages/_home.scss */
+/* line 32, ../sass/pages/_home.scss */
 .thumb .title-block h2 {
-  display: inline-block;
-  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* line 48, ../sass/pages/_home.scss */
+/* line 39, ../sass/pages/_home.scss */
 .thumb:hover .title-block {
   opacity: 1;
 }
