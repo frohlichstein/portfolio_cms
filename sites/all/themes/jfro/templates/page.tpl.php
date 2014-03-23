@@ -1,7 +1,7 @@
 
 	<header class="header">
 		<div class="wrapper cf">
-			<h1 class="logo"><a href="./">Jason Frohlichstein <span class="quote">pronounces his name jay sun fraw lick steen.</span></a></h1>
+			<h1 class="logo"><a href="/">Jason Frohlichstein <span class="quote">pronounces his name jay sun fraw lick steen.</span></a></h1>
 			<a href="mailto:hello@jasonfrohlichstein.com" class="hello">Hello</a>
 		</div>
 	</header>

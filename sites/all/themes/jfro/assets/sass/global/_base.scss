@@ -1,9 +1,8 @@
 .wrapper {
     @include cf;
 	position: relative;
-/* 	max-width: 1400px; */
+	max-width: 1600px;
 	margin: 0 30px;
-/* 	padding: 0 30px; */
 }
 
 .header .wrapper {
@@ -18,22 +17,3 @@
 .messages {
     display: none;
 }
-
-/*
-.grid {
-    margin: 0 -10px;
-}
-
-.grid .item {
-    float: left;
-}
-
-.grid .item:nth-child(2n) {
-    margin-right: 0;
-}
-
-.two-col .item {
-    width: 48%;
-    margin-right: 4%;
-}
-*/

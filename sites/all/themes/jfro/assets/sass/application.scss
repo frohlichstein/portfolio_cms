@@ -11,29 +11,19 @@
 @import "global/mixins";
 @import "global/base";
 @import "global/buttons";
-@import "global/grid";/*
-
+@import "global/grid";
+/*
 @import "global/icons";
-
-
 @import "global/forms";
 */
 
 
 /* Modules */
-/*
-@import "modules/search-form";
-@import "modules/social";
-@import "modules/org-list";
-@import "modules/activity-grid";
-@import "modules/activity-list";
-@import "modules/class-list";
-@import "modules/class-pricing";
-*/
 
 
 /* Pages */
 @import "pages/home";
+@import "pages/projects";
 @import "pages/info";
 
 /* Sections */

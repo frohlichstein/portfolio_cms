@@ -1,24 +1,51 @@
 <!-- Horizontal layout, place these items where you will! -->
 
-<h1><?php print $project->title; ?></h1>
+<div class="project-info">
 
-<?php if($project->body): ?>
-<div class="body"><?php print $project->body; ?></div>
-<?php endif; ?>
+<h1 class="project-title"><?php print $project->title; ?></h1>
 
-<?php if($project->link): ?>
-<a href="<?php print $project->link; ?>"><?php print str_replace("http://", "", $project->link); ?></a>
-<?php endif; ?>
+<div class="grid">
 
-<?php if($project->extra_info_1): ?>
-<div class="extra_info_1"><?php print $project->extra_info_1; ?></div>
-<?php endif; ?>
+    <div class="col-1-2 project-description">
+        <div class="wrap">
+    
+            <?php if($project->body): ?>
+            <div class="body"><?php print $project->body; ?></div>
+            <?php endif; ?>
+            
+            <?php if($project->link): ?>
+            <p><a href="<?php print $project->link; ?>"><?php print str_replace("http://", "", $project->link); ?></a></p>
+            <?php endif; ?>
+            
+            <div class="social-links">
+                <?php print theme("project_share", array("project" => $project)); ?>
+            </div>
+    
+        </div>
+    </div>
 
-<?php if($project->extra_info_2): ?>
-<div class="extra_info_2"><?php print $project->extra_info_2; ?></div>
-<?php endif; ?>
+    <div class="col-1-4 col project-credits">
+        <div class="wrap">
 
-<div class="share"><?php print theme("project_share", array("project" => $project)); ?></div>
+            <?php if($project->extra_info_1): ?>
+            <?php print $project->extra_info_1; ?>
+            <?php endif; ?>
+        
+        </div>
+    </div>
+
+    <div class="col-1-4 col project-awards">
+        <div class="wrap">
+
+            <?php if($project->extra_info_2): ?>
+            <?php print $project->extra_info_2; ?>
+            <?php endif; ?>        
+
+        </div>
+    </div>
+
+</div>
+
 
 <?php if($project->video): ?>
 <div class="video"><?php print $project->video; ?></div>

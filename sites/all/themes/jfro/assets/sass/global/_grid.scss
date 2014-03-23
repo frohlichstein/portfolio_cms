@@ -1,21 +1,17 @@
-$gutter: 3.15%; /* 36px*/
-$pad: 18px;
+$pad: 10px;
 
 .grid {
     @include cf;
     margin: 0 -10px;
-
-    @include bp-max-width($small) {
-        margin: 0 -3%;
-    }
 }
 
 [class*='col-'] {
     float: left;
     padding: 0 10px;
-
-    @include bp-max-width($small) {
-        padding: 0 3%;
+    
+    .wrap {
+        padding-top: 6px;
+        border-top: 2px solid #000;
     }
 }
 
@@ -30,6 +26,20 @@ $pad: 18px;
 .col-1-2 {
     width: 50%;
 }
+
+.col-1-4 {
+    width: 25%;
+
+    @include bp-max-width($large) {
+        width: 50%;
+        margin-bottom: $base;
+        &:nth-child(2n+1) {
+            clear: left;
+        }
+    }
+}
+
+/*
 
 .col-1-3 {
     width: 33.33%;
@@ -58,15 +68,4 @@ $pad: 18px;
     }
 
 }
-
-.col-1-4 {
-    width: 25%;
-
-    @include bp-max-width($large) {
-        width: 50%;
-        margin-bottom: $base;
-        &:nth-child(2n+1) {
-            clear: left;
-        }
-    }
-}
+*/
