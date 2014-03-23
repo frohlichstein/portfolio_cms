@@ -16,11 +16,6 @@
     	$('.main-nav').removeClass('show');
 	});
 
-    // Resize Project Thumb Title Hover
-    function resize_thumbs() {
-        var y = $('.thumb').width();
-        $('.thumb .project-title').css('height', y-4).css('width', y-4);
-    }
 
     // Scroll Top
     function back_to_top() {
@@ -43,7 +38,6 @@
 	$(window).on('resize', function() {
 	    resize_thumbs();
 	});
-	resize_thumbs();
 	category_toggle();
 	back_to_top();
 	mobile_menu_btn();

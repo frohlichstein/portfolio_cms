@@ -161,7 +161,7 @@ em {
   line-height: 1;
 }
 
-/* line 59, ../sass/global/_typography.scss */
+/* line 58, ../sass/global/_typography.scss */
 .meta-info {
   font-size: 12px;
 }
@@ -324,62 +324,63 @@ a:hover {
 /* Modules */
 /* Pages */
 /* line 1, ../sass/pages/_home.scss */
-.home .main .wrapper {
+.front .main .wrapper {
   margin: 0 20px;
 }
 
 /* line 5, ../sass/pages/_home.scss */
-.four-col {
-  width: 100%;
-}
-
-/* line 9, ../sass/pages/_home.scss */
-.four-col .item {
-  width: 25%;
-  padding: 0 10px;
-}
-
-/* line 14, ../sass/pages/_home.scss */
-.item {
+.thumb {
   margin-bottom: 20px;
 }
 
-/* line 18, ../sass/pages/_home.scss */
+/* line 9, ../sass/pages/_home.scss */
 .thumb {
   display: block;
   position: relative;
 }
-
-/* line 23, ../sass/pages/_home.scss */
+/* line 12, ../sass/pages/_home.scss */
 .thumb img {
   width: 100%;
 }
+/* line 15, ../sass/pages/_home.scss */
+.thumb a {
+  display: block;
+  position: relative;
+}
 
-/* line 27, ../sass/pages/_home.scss */
-.thumb .project-title {
+/* line 21, ../sass/pages/_home.scss */
+.thumb .title-block {
   position: absolute;
   top: 2px;
-  left: 12px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
   opacity: 0;
-  display: table;
+  display: block;
   padding: 0 10px;
   background: rgba(255, 255, 255, 0.95);
+  text-align: center;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   -ms-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
 }
-
-/* line 41, ../sass/pages/_home.scss */
-.thumb:hover .project-title {
-  opacity: 1;
+/* line 36, ../sass/pages/_home.scss */
+.thumb .title-block:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 42, ../sass/pages/_home.scss */
+.thumb .title-block h2 {
+  display: inline-block;
+  vertical-align: middle;
 }
 
-/* line 45, ../sass/pages/_home.scss */
-.thumb .project-title h2 {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+/* line 48, ../sass/pages/_home.scss */
+.thumb:hover .title-block {
+  opacity: 1;
 }
 
 /* line 1, ../sass/pages/_projects.scss */
