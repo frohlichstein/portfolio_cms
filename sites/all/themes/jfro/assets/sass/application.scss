@@ -12,9 +12,9 @@
 @import "global/base";
 @import "global/buttons";
 @import "global/grid";
+@import "global/forms";
 /*
 @import "global/icons";
-@import "global/forms";
 */
 
 
@@ -25,6 +25,7 @@
 @import "pages/home";
 @import "pages/projects";
 @import "pages/info";
+@import "pages/user-login";
 
 /* Sections */
 @import "sections/header";
