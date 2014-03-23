@@ -188,14 +188,9 @@ em {
   padding: 40px 0 20px;
 }
 
-/* line 21, ../sass/global/_base.scss */
-.left {
-  float: left;
-}
-
-/* line 22, ../sass/global/_base.scss */
-.right {
-  float: right;
+/* line 18, ../sass/global/_base.scss */
+.messages {
+  display: none;
 }
 
 /*
@@ -426,12 +421,74 @@ a:hover {
   text-align: center;
 }
 
-/*
-@import "pages/search";
-@import "pages/class";
-@import "pages/admin";
-@import "pages/checkout";
-*/
+/* line 2, ../sass/pages/_info.scss */
+.info-grid .col {
+  float: left;
+}
+
+/* line 6, ../sass/pages/_info.scss */
+.info-grid .row {
+  margin-bottom: 40px;
+}
+
+/* line 10, ../sass/pages/_info.scss */
+.info-grid .c1 {
+  width: 25.666%;
+  padding-right: 40px;
+}
+
+/* line 15, ../sass/pages/_info.scss */
+.info-grid .c2-c4 {
+  width: 74.333%;
+}
+
+/* line 19, ../sass/pages/_info.scss */
+.info-grid .c3-c4 {
+  width: 65.47%;
+}
+
+/* line 23, ../sass/pages/_info.scss */
+.info-grid .c2, .info-grid .c3 {
+  width: 34.529%;
+  padding-right: 40px;
+}
+
+/* line 28, ../sass/pages/_info.scss */
+.info-grid .c4 {
+  width: 30.941%;
+}
+
+/* line 32, ../sass/pages/_info.scss */
+.info-grid .title {
+  margin-bottom: 10px;
+}
+
+/* line 36, ../sass/pages/_info.scss */
+.info-list li {
+  margin-bottom: 20px;
+}
+
+/* line 40, ../sass/pages/_info.scss */
+.info-list p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 45, ../sass/pages/_info.scss */
+.exhibition h3 {
+  font-style: italic;
+}
+
+/* line 49, ../sass/pages/_info.scss */
+.instagram .title {
+  margin-bottom: 14px;
+}
+
+/* line 53, ../sass/pages/_info.scss */
+.instagram li {
+  margin-bottom: 20px;
+}
+
 /* Sections */
 /* line 2, ../sass/sections/_header.scss */
 .logo {
@@ -534,11 +591,20 @@ a:hover {
 }
 
 /* line 9, ../sass/sections/_footer.scss */
-.footer .left a {
+.footer .copyright {
+  float: left;
+}
+/* line 11, ../sass/sections/_footer.scss */
+.footer .copyright a {
   margin-left: 20px;
 }
 
-/* line 13, ../sass/sections/_footer.scss */
+/* line 16, ../sass/sections/_footer.scss */
+.footer .contact-email {
+  float: right;
+}
+
+/* line 20, ../sass/sections/_footer.scss */
 .back-to-top {
   position: absolute;
   top: -48px;
@@ -554,7 +620,7 @@ a:hover {
   text-align: center;
 }
 
-/* line 28, ../sass/sections/_footer.scss */
+/* line 35, ../sass/sections/_footer.scss */
 .back-to-top:before {
   position: absolute;
   top: -20px;
@@ -572,12 +638,12 @@ a:hover {
   -o-transition: all 0.15s ease-in-out;
 }
 
-/* line 45, ../sass/sections/_footer.scss */
+/* line 52, ../sass/sections/_footer.scss */
 .back-to-top:hover {
   background: #324e59;
 }
 
-/* line 49, ../sass/sections/_footer.scss */
+/* line 56, ../sass/sections/_footer.scss */
 .back-to-top:hover:before {
   border-bottom-color: #324e59;
 }

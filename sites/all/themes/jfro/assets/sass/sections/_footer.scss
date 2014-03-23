@@ -6,8 +6,15 @@
     text-transform: uppercase;
 }
 
-.footer .left a {
-    margin-left: 20px;
+.footer .copyright {
+    float: left;
+    a {
+        margin-left: 20px;
+    }
+}
+
+.footer .contact-email {
+    float: right;
 }
 
 .back-to-top {

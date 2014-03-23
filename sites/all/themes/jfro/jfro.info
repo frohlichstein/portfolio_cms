@@ -4,4 +4,4 @@ version = 7.26
 core = 7.x
 
 stylesheets[all][] = assets/css/application.css
-scripts[] = js/application.js
+scripts[] = assets/js/application.js

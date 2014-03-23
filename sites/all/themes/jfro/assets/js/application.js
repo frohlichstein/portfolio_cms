@@ -1,25 +1,28 @@
-$(function(){
+(function($){
 
-    $.fn.shuffle = function() {
- 
-        var allElems = this.get(),
-            getRandom = function(max) {
-                return Math.floor(Math.random() * max);
-            },
-            shuffled = $.map(allElems, function(){
-                var random = getRandom(allElems.length),
-                    randEl = $(allElems[random]).clone(true)[0];
-                allElems.splice(random, 1);
-                return randEl;
-           });
- 
-        this.each(function(i){
-            $(this).replaceWith($(shuffled[i]));
-        });
- 
-        return $(shuffled);
- 
-    };
+  $(function(){
+	
+	// Mobile Button
+	$('.cat-open').click(function(){
+		$(this).hide();
+		$('.cat-nav').show();
+		return false;
+	});
+	
+	$('.show a').click(function(){
+    	$('.main-nav').removeClass('show');
+	});
+
+    function resize_thumbs() {
+        var y = $('.thumb').width();
+        $('.thumb .project-title').css('height', y-4).css('width', y-4);
+    }
+
+	$(window).on('resize', function() {
+	    resize_thumbs();
+	});
+	resize_thumbs();
+
 
 	$('.btn-show-more').on('click', function(){
 	    $('.activity-grid .col-1-3').clone().slice(0,3).shuffle().hide().appendTo('.activity-grid').fadeIn();
@@ -47,5 +50,7 @@ $(function(){
         }, 300);
 		return false;
 	});
+	
+  });
 
-});
+})(jQuery)

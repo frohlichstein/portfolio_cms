@@ -33,7 +33,7 @@
 	
 	<footer class="footer cf">
 		<div class="wrapper cf">
-			<div class="left">Jason Frohlichstein &copy;<?php echo date('Y'); ?> <a href="">Web Developer</a>: Brad Sawicki</div>
-			<div class="right"><a href="">hello@jasonfrohlichstein.com</a></div>
+			<div class="copyright">Jason Frohlichstein &copy;<?php echo date('Y'); ?> <a href="">Web Developer</a>: Brad Sawicki</div>
+			<div class="contact-email"><a href="">hello@jasonfrohlichstein.com</a></div>
 		</div>
 	</footer>
