@@ -35,9 +35,12 @@
     float: right;
 }
 
-.nav .cat-open {
+.nav .cat-toggle {
     font-size: 18px;
     padding: 8px 0 0;
+    .cat-close {
+        display: none;
+    }
 }
 
 .cat-nav {

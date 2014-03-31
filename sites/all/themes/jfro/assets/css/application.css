@@ -204,18 +204,13 @@ a {
   outline: none;
   color: #000;
   text-decoration: none;
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -ms-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
 }
-
-/* line 11, ../sass/global/_buttons.scss */
+/* line 5, ../sass/global/_buttons.scss */
 a:hover {
   color: #aaaaaa;
 }
 
-/* line 15, ../sass/global/_buttons.scss */
+/* line 10, ../sass/global/_buttons.scss */
 .btn {
   display: inline-block;
   padding: 2px 12px 3px;
@@ -224,7 +219,7 @@ a:hover {
   color: #fff;
 }
 
-/* line 23, ../sass/global/_buttons.scss */
+/* line 18, ../sass/global/_buttons.scss */
 .btn:hover {
   background: #62a7c1;
   color: #fff;
@@ -426,10 +421,6 @@ input[type="submit"]:hover, button:hover {
 
 /* line 21, ../sass/pages/_home.scss */
 .thumb .title-block {
-  -webkit-transition: all 0.15s ease-in;
-  -moz-transition: all 0.15s ease-in;
-  -o-transition: all 0.15s ease-in;
-  transition: all 0.15s ease-in;
   position: absolute;
   top: 2px;
   right: 2px;
@@ -437,14 +428,15 @@ input[type="submit"]:hover, button:hover {
   left: 2px;
   opacity: 0;
   display: block;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.98);
   text-align: center;
 }
-/* line 32, ../sass/pages/_home.scss */
+/* line 31, ../sass/pages/_home.scss */
 .thumb .title-block h2 {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  color: #000;
 }
 
 /* line 39, ../sass/pages/_home.scss */
@@ -717,17 +709,21 @@ input[type="submit"]:hover, button:hover {
 }
 
 /* line 38, ../sass/sections/_nav.scss */
-.nav .cat-open {
+.nav .cat-toggle {
   font-size: 18px;
   padding: 8px 0 0;
 }
+/* line 41, ../sass/sections/_nav.scss */
+.nav .cat-toggle .cat-close {
+  display: none;
+}
 
-/* line 43, ../sass/sections/_nav.scss */
+/* line 46, ../sass/sections/_nav.scss */
 .cat-nav {
   display: none;
 }
 
-/* line 47, ../sass/sections/_nav.scss */
+/* line 50, ../sass/sections/_nav.scss */
 .cat-nav li {
   position: relative;
   float: left;
@@ -735,7 +731,7 @@ input[type="submit"]:hover, button:hover {
   padding-left: 20px;
 }
 
-/* line 54, ../sass/sections/_nav.scss */
+/* line 57, ../sass/sections/_nav.scss */
 .cat-nav li:not(:first-child):after {
   content: "//";
   position: absolute;

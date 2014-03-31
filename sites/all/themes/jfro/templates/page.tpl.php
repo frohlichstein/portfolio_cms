@@ -10,13 +10,13 @@
 		<div class="wrapper cf">
     	    <?php print $main_menu; ?>
     	    <div class="categories">
-    	        <a href="" class="cat-open">+</a>
+    	        <a href="" class="cat-toggle"><span class="cat-open">+</span><span class="cat-close">-</span></a>
     	        <ul class="cat-nav">
     	            <li><a href="">View All</a></li>
     	            <li><a href="">Design</a></li>
-    	            <li><a href="">Art</a></li>
     	            <li><a href="">Illustration</a></li>
     	            <li><a href="">Icons</a></li>
+    	            <li><a href="">Art</a></li>
     	        </ul>
     	    </div>
 		</div>
