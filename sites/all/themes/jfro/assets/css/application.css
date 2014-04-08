@@ -196,7 +196,7 @@ em {
 
 /* line 17, ../sass/global/_base.scss */
 .messages {
-  display: none;
+  /*display: none;*/
 }
 
 /* line 1, ../sass/global/_buttons.scss */
@@ -286,7 +286,7 @@ a:hover {
 
 .col-1-3 {
     width: 33.33%;
-    
+
     &:nth-child(3n+1) {
         clear: left;
         @include bp-max-width($large) {

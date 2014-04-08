@@ -82,6 +82,15 @@ function admin_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: 'administer taxonomy'.
+  $permissions['administer taxonomy'] = array(
+    'name' => 'administer taxonomy',
+    'roles' => array(
+      'editor' => 'editor',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'administer url aliases'.
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',
@@ -134,6 +143,24 @@ function admin_user_default_permissions() {
       'editor' => 'editor',
     ),
     'module' => 'path',
+  );
+
+  // Exported permission: 'delete terms in project_type'.
+  $permissions['delete terms in project_type'] = array(
+    'name' => 'delete terms in project_type',
+    'roles' => array(
+      'editor' => 'editor',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit terms in project_type'.
+  $permissions['edit terms in project_type'] = array(
+    'name' => 'edit terms in project_type',
+    'roles' => array(
+      'editor' => 'editor',
+    ),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'import media'.
