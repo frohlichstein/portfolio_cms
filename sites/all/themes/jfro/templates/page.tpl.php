@@ -5,32 +5,26 @@
 			<a href="mailto:hello@jasonfrohlichstein.com" class="hello">Hello</a>
 		</div>
 	</header>
-	
+
     <nav class="nav">
 		<div class="wrapper cf">
     	    <?php print $main_menu; ?>
     	    <div class="categories">
     	        <a href="" class="cat-toggle"><span class="cat-open">+</span><span class="cat-close">-</span></a>
-    	        <ul class="cat-nav">
-    	            <li><a href="">View All</a></li>
-    	            <li><a href="">Design</a></li>
-    	            <li><a href="">Illustration</a></li>
-    	            <li><a href="">Icons</a></li>
-    	            <li><a href="">Art</a></li>
-    	        </ul>
+              <?php print $cat_menu; ?>
     	    </div>
 		</div>
 	</nav>
 
 	<section id="main" class="main">
 		<div class="wrapper">
-            
+
             <?php print $messages; ?>
             <?php print render($page['content']); ?>
-        
+
 		</div>
 	</section>
-	
+
 	<footer class="footer cf">
 		<div class="wrapper cf">
 			<div class="copyright">Jason Frohlichstein &copy;<?php echo date('Y'); ?> <a href="">Web Developer</a>: Brad Sawicki</div>

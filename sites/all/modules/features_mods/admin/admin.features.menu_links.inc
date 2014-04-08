@@ -93,6 +93,26 @@ function admin_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'editor-menu_content:admin/content',
   );
+  // Exported menu link: editor-menu_tags:admin/structure/taxonomy/project_type
+  $menu_links['editor-menu_tags:admin/structure/taxonomy/project_type'] = array(
+    'menu_name' => 'editor-menu',
+    'link_path' => 'admin/structure/taxonomy/project_type',
+    'router_path' => 'admin/structure/taxonomy/%',
+    'link_title' => 'Tags',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'editor-menu_tags:admin/structure/taxonomy/project_type',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+  );
   // Exported menu link: main-menu_info:info
   $menu_links['main-menu_info:info'] = array(
     'menu_name' => 'main-menu',
@@ -153,51 +173,15 @@ function admin_menu_default_menu_links() {
     'weight' => -48,
     'customized' => 1,
   );
-  // Exported menu link: user-menu_log-out:user/logout
-  $menu_links['user-menu_log-out:user/logout'] = array(
-    'menu_name' => 'user-menu',
-    'link_path' => 'user/logout',
-    'router_path' => 'user/logout',
-    'link_title' => 'Log out',
-    'options' => array(
-      'identifier' => 'user-menu_log-out:user/logout',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 10,
-    'customized' => 0,
-  );
-  // Exported menu link: user-menu_user-account:user
-  $menu_links['user-menu_user-account:user'] = array(
-    'menu_name' => 'user-menu',
-    'link_path' => 'user',
-    'router_path' => 'user',
-    'link_title' => 'User account',
-    'options' => array(
-      'alter' => TRUE,
-      'identifier' => 'user-menu_user-account:user',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -10,
-    'customized' => 0,
-  );
   // Translatables
   // Included for use with string extractors like potx.
   t('Add content');
   t('Content');
   t('Info');
-  t('Log out');
   t('Project');
   t('Projects');
   t('Store');
-  t('User account');
+  t('Tags');
 
 
   return $menu_links;

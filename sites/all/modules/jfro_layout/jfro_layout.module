@@ -25,9 +25,10 @@ function jfro_layout_theme($existing, $type, $theme, $path) {
  * Implements hook_menu().
  */
 function jfro_layout_menu() {
-  $items['home'] = array(
+  $items['projects'] = array(
     'title' => 'JFro Home',
-    'page callback' => 'jfro_layout_home_callback',
+    'page callback' => 'jfro_layout_projects_callback',
+    'page arguments' => array(1),
     'access arguments' => array('access content'),
   );
   $items['info'] = array(
@@ -43,6 +44,7 @@ function jfro_layout_menu() {
  */
 function jfro_layout_preprocess_page(&$variables) {
   $variables['main_menu'] = render(menu_tree_output(menu_tree_all_data('main-menu')));
+  $variables['cat_menu'] = project_tags_nav();
 }
 
 /**
@@ -66,8 +68,9 @@ function jfro_layout_preprocess_node(&$variables) {
 /**
  * Page callback: home
  */
-function jfro_layout_home_callback(){
-  $projects = jfro_layout_get_projects();
+function jfro_layout_projects_callback($filter){
+  $tid = get_tid_from_term_name($filter);
+  $projects = jfro_layout_get_projects($tid);
   $variables = array(
     'projects' => $projects
   );
@@ -93,8 +96,9 @@ function jfro_layout_info_callback(){
  * Return an array of projects
  * @return array
  */
-function jfro_layout_get_projects(){
-  $results = views_get_view_result('projects', 'page');
+function jfro_layout_get_projects($tid){
+  $args = $tid ? $tid : NULL;
+  $results = views_get_view_result('projects', 'page', $args);
   $projects = array();
   foreach($results as $result){
     $node = node_load($result->nid);
@@ -134,9 +138,37 @@ function instagram_recent(){
   $response = drupal_http_request("https://api.instagram.com/v1/users/17426721/media/recent/?count=5&client_id=" . INSTAGRAM_CLIENT_ID);
   $json = json_decode($response->data);
   foreach($json->data as $photo){
-    $instagram_photos[] = $photo->images->thumbnail->url;
+    $instagram_photos[] = $photo->images->standard_resolution->url;
   }
   return $instagram_photos;
+}
+
+/**
+ * Returns the tid of a given term name. Returns NULL if term is not found.
+ */
+function get_tid_from_term_name($term_name){
+  $term_array = taxonomy_get_term_by_name($term_name);
+  if(!empty($term_array)){
+    $term = array_shift($term_array);
+    return $term->tid;
+  }
+  return NULL;
+}
+
+function project_tags_nav(){
+  $url_term = arg(1);
+  $tree = taxonomy_get_tree(1);
+  $output = '<ul class="cat-nav">';
+  $output .= '<li><a href="">View all</a></li>';
+  foreach ($tree as $term) {
+    if($url_term == strtolower($term->name)){
+      $output .= '<li class="active"><a href="/projects/' . strtolower($term->name) . '">' . $term->name . '</a></li>';
+    }else{
+      $output .= '<li><a href="/projects/' . strtolower($term->name) . '">' . $term->name . '</a></li>';
+    }
+  }
+  $output .= '</ul>';
+  return $output;
 }
 
 ?>

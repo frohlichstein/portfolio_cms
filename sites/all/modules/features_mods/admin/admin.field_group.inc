@@ -27,6 +27,7 @@ function admin_field_group_info() {
       1 => 'field_link',
       2 => 'field_extra_info_1',
       3 => 'field_extra_info_2',
+      4 => 'field_tags',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

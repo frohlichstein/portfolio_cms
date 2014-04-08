@@ -316,6 +316,43 @@ function admin_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-project-field_tags'
+  $field_instances['node-project-field_tags'] = array(
+    'bundle' => 'project',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tags',
+    'label' => 'Tags',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'node-project-field_video'
   $field_instances['node-project-field_video'] = array(
     'bundle' => 'project',
@@ -385,6 +422,7 @@ function admin_field_default_field_instances() {
   t('Link');
   t('Must begin with http://');
   t('Project images');
+  t('Tags');
   t('Video');
 
   return $field_instances;
