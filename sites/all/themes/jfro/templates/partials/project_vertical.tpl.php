@@ -1,33 +1,65 @@
 <!-- Vertical layout, place these items where you will! -->
 
-<h1><?php print $project->title; ?></h1>
+<div class="project-layout-vert grid">
 
-<?php if($project->body): ?>
-<div class="body"><?php print $project->body; ?></div>
-<?php endif; ?>
+    <aside class="col-1-4 left-sidebar project-info">
+    
+        <h1 class="project-title"><?php print $project->title; ?></h1>
+        
+        <div class="project-description">
+            <div class="wrap">
+        
+                <?php if($project->body): ?>
+                <div class="body"><?php print $project->body; ?></div>
+                <?php endif; ?>
+                
+                <?php if($project->link): ?>
+                <p><a href="<?php print $project->link; ?>"><?php print str_replace("http://", "", $project->link); ?></a></p>
+                <?php endif; ?>
+                
+                <div class="social-links">
+                    <?php print theme("project_share", array("project" => $project)); ?>
+                </div>
+        
+            </div>
+        </div>
+    
+        <div class="project-credits">
+            <div class="wrap">
+    
+                <?php if($project->extra_info_1): ?>
+                <?php print $project->extra_info_1; ?>
+                <?php endif; ?>
+            
+            </div>
+        </div>
+    
+        <div class="project-awards">
+            <div class="wrap">
+    
+                <?php if($project->extra_info_2): ?>
+                <?php print $project->extra_info_2; ?>
+                <?php endif; ?>        
+    
+            </div>
+        </div>
+            
+    </aside>
+    
+    <section class="col-3-4 project-images">
+    
+    <?php if($project->video): ?>
+    <div class="video"><?php print $project->video; ?></div>
+    <?php endif; ?>
+    
+    <?php if($project->has_images): ?>
+      <?php foreach($project->images('medium') as $image): ?>
+      <div class="image"><?php print $image ?></div>
+      <?php endforeach; ?>
+    <?php endif; ?>
+    
+    </section>
 
-<?php if($project->link): ?>
-<a href="<?php print $project->link; ?>"><?php print str_replace("http://", "", $project->link); ?></a>
-<?php endif; ?>
-
-<?php if($project->extra_info_1): ?>
-<div class="extra_info_1"><?php print $project->extra_info_1; ?></div>
-<?php endif; ?>
-
-<?php if($project->extra_info_2): ?>
-<div class="extra_info_2"><?php print $project->extra_info_2; ?></div>
-<?php endif; ?>
-
-<div class="share"><?php print theme("project_share", array("project" => $project)); ?></div>
-
-<?php if($project->video): ?>
-<div class="video"><?php print $project->video; ?></div>
-<?php endif; ?>
-
-<?php if($project->has_images): ?>
-  <?php foreach($project->images('medium') as $image): ?>
-  <div class="image"><?php print $image ?></div>
-  <?php endforeach; ?>
-<?php endif; ?>
+</div>
 
 <?php print theme("project_controls", array("project" => $project)); ?>
