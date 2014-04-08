@@ -134,7 +134,7 @@ function instagram_recent(){
   $response = drupal_http_request("https://api.instagram.com/v1/users/17426721/media/recent/?count=5&client_id=" . INSTAGRAM_CLIENT_ID);
   $json = json_decode($response->data);
   foreach($json->data as $photo){
-    $instagram_photos[] = $photo->images->thumbnail->url;
+    $instagram_photos[] = $photo->images->standard_resolution->url;
   }
   return $instagram_photos;
 }
