@@ -58,6 +58,7 @@ function admin_field_group_info() {
       0 => 'field_project_images',
       1 => 'field_grid_image',
       2 => 'field_video',
+      3 => 'field_images',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
