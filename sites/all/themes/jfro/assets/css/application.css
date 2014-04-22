@@ -196,7 +196,7 @@ em {
 
 /* line 17, ../sass/global/_base.scss */
 .messages {
-  /*display: none;*/
+  display: none;
 }
 
 /* line 1, ../sass/global/_buttons.scss */
@@ -286,7 +286,7 @@ a:hover {
 
 .col-1-3 {
     width: 33.33%;
-
+    
     &:nth-child(3n+1) {
         clear: left;
         @include bp-max-width($large) {
@@ -333,7 +333,7 @@ label {
   font-size: 16px;
 }
 
-/* line 24, ../sass/global/_forms.scss */
+/* line 20, ../sass/global/_forms.scss */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -347,7 +347,7 @@ select {
   font: 400 1em/1em "proxima-nova", Helvetica, arial, sans-serif;
 }
 
-/* line 36, ../sass/global/_forms.scss */
+/* line 33, ../sass/global/_forms.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
@@ -439,131 +439,6 @@ input[type="submit"]:hover, button:hover {
   opacity: 1;
 }
 
-/* line 1, ../sass/pages/_projects.scss */
-.project .project-title {
-  margin-bottom: 6px;
-}
-
-/* line 5, ../sass/pages/_projects.scss */
-.project-description {
-  position: relative;
-}
-
-/* line 9, ../sass/pages/_projects.scss */
-.project-description p {
-  line-height: 1.3em;
-  margin-bottom: 18px;
-}
-
-/* line 14, ../sass/pages/_projects.scss */
-.project-description p:last-of-type {
-  margin-bottom: 0;
-}
-
-/* line 18, ../sass/pages/_projects.scss */
-.project-description .social-links {
-  position: absolute;
-  bottom: 0;
-  right: 10px;
-}
-/* line 23, ../sass/pages/_projects.scss */
-.project-description .social-links .share {
-  float: left;
-}
-
-/* line 28, ../sass/pages/_projects.scss */
-.project-description .social-links a {
-  float: left;
-  display: block;
-  width: 16px;
-  height: 16px;
-  margin-left: 6px;
-  background: #ccc;
-}
-
-/* line 38, ../sass/pages/_projects.scss */
-.project-credits p,
-.project-awards p {
-  font-size: 12px;
-  line-height: 1.4em;
-}
-
-/* line 43, ../sass/pages/_projects.scss */
-.project-credits h3 {
-  font: 700 12px/1.4em "proxima-nova", Helvetica, arial, sans-serif;
-}
-
-/** PROJECT IMAGES ================**/
-/* line 52, ../sass/pages/_projects.scss */
-.project-image-grid .col {
-  float: left;
-  margin-bottom: 20px;
-  padding: 0 10px;
-}
-
-/** PROJECT NAV ================**/
-/* line 63, ../sass/pages/_projects.scss */
-.project-nav {
-  clear: both;
-  position: relative;
-  height: 40px;
-  text-align: center;
-}
-
-/* line 70, ../sass/pages/_projects.scss */
-.project-nav a {
-  position: absolute;
-  display: block;
-  background: url(../images/sprite.svg) no-repeat;
-}
-
-/* line 76, ../sass/pages/_projects.scss */
-.project-nav a:hover {
-  opacity: 0.5;
-}
-
-/* line 81, ../sass/pages/_projects.scss */
-.project-nav .previous,
-.project-nav .next {
-  bottom: 0;
-  width: 12px;
-  height: 21px;
-}
-
-/* line 87, ../sass/pages/_projects.scss */
-.project-nav .previous {
-  left: 0;
-}
-
-/* line 91, ../sass/pages/_projects.scss */
-.project-nav .next {
-  right: 0;
-  background-position: -14px 0;
-}
-
-/* line 97, ../sass/pages/_projects.scss */
-.project-nav .back-to-thumbs,
-.project-nav .scroll-top {
-  left: 50%;
-}
-
-/* line 101, ../sass/pages/_projects.scss */
-.project-nav .scroll-top {
-  width: 21px;
-  height: 12px;
-  margin-left: -10px;
-  background-position: 0 -23px;
-}
-
-/* line 108, ../sass/pages/_projects.scss */
-.project-nav .back-to-thumbs {
-  bottom: 0;
-  width: 20px;
-  height: 20px;
-  margin-left: -10px;
-  background-position: 0 -50px;
-}
-
 /* line 2, ../sass/pages/_info.scss */
 .info-grid .col {
   float: left;
@@ -638,6 +513,164 @@ input[type="submit"]:hover, button:hover {
   margin: 0 auto 88px;
 }
 
+/* line 1, ../sass/pages/projects/_global.scss */
+.project .project-title {
+  margin-bottom: 6px;
+}
+
+/* line 5, ../sass/pages/projects/_global.scss */
+.project-description {
+  position: relative;
+}
+/* line 7, ../sass/pages/projects/_global.scss */
+.project-description .body {
+  margin-bottom: 22px;
+}
+
+/* line 12, ../sass/pages/projects/_global.scss */
+.project-description p {
+  line-height: 1.3em;
+  margin-bottom: 18px;
+}
+/* line 15, ../sass/pages/projects/_global.scss */
+.project-description p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* line 20, ../sass/pages/projects/_global.scss */
+.social-links {
+  *zoom: 1;
+}
+/* line 2, ../sass/global/_mixins.scss */
+.social-links:before, .social-links:after {
+  content: " ";
+  display: block;
+}
+/* line 6, ../sass/global/_mixins.scss */
+.social-links:after {
+  clear: both;
+}
+/* line 22, ../sass/pages/projects/_global.scss */
+.social-links .share {
+  float: left;
+}
+
+/* line 29, ../sass/pages/projects/_global.scss */
+.social-links a {
+  float: left;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+  background: #ccc;
+}
+
+/* line 38, ../sass/pages/projects/_global.scss */
+.project-credits p,
+.project-awards p {
+  font-size: 12px;
+  line-height: 1.4em;
+}
+
+/* line 44, ../sass/pages/projects/_global.scss */
+.project-credits h3 {
+  font: 700 12px/1.4em "proxima-nova", Helvetica, arial, sans-serif;
+}
+
+/** PROJECT IMAGES ================**/
+/* line 53, ../sass/pages/projects/_global.scss */
+.project-image-grid .col {
+  float: left;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+/** PROJECT NAV ================**/
+/* line 64, ../sass/pages/projects/_global.scss */
+.project-nav {
+  clear: both;
+  position: relative;
+  height: 40px;
+  text-align: center;
+}
+
+/* line 71, ../sass/pages/projects/_global.scss */
+.project-nav a {
+  position: absolute;
+  display: block;
+  background: url(../images/sprite.svg) no-repeat;
+}
+
+/* line 77, ../sass/pages/projects/_global.scss */
+.project-nav a:hover {
+  opacity: 0.5;
+}
+
+/* line 81, ../sass/pages/projects/_global.scss */
+.project-nav .previous,
+.project-nav .next {
+  bottom: 0;
+  width: 12px;
+  height: 21px;
+}
+
+/* line 88, ../sass/pages/projects/_global.scss */
+.project-nav .previous {
+  left: 0;
+}
+
+/* line 92, ../sass/pages/projects/_global.scss */
+.project-nav .next {
+  right: 0;
+  background-position: -14px 0;
+}
+
+/* line 97, ../sass/pages/projects/_global.scss */
+.project-nav .back-to-thumbs,
+.project-nav .scroll-top {
+  left: 50%;
+}
+
+/* line 102, ../sass/pages/projects/_global.scss */
+.project-nav .scroll-top {
+  width: 21px;
+  height: 12px;
+  margin-left: -10px;
+  background-position: 0 -23px;
+}
+
+/* line 109, ../sass/pages/projects/_global.scss */
+.project-nav .back-to-thumbs {
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  background-position: 0 -50px;
+}
+
+/* line 2, ../sass/pages/projects/_vertical.scss */
+.project-layout-vert .project-description,
+.project-layout-vert .project-credits {
+  margin-bottom: 40px;
+}
+
+/* line 7, ../sass/pages/projects/_vertical.scss */
+.site-link {
+  margin-bottom: 22px;
+}
+
+/* line 3, ../sass/pages/projects/_horizontal.scss */
+.project-layout-horiz .project-info {
+  margin-bottom: 60px;
+}
+
+/* line 7, ../sass/pages/projects/_horizontal.scss */
+.project-layout-horiz .social-links {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
 /* Sections */
 /* line 2, ../sass/sections/_header.scss */
 .logo {
@@ -692,7 +725,7 @@ input[type="submit"]:hover, button:hover {
   padding-right: 0;
 }
 
-/* line 27, ../sass/sections/_nav.scss */
+/* line 26, ../sass/sections/_nav.scss */
 .menu .active,
 .node-type-project .first a {
   border-bottom: 2px solid #000;

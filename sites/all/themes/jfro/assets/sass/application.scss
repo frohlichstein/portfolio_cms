@@ -23,9 +23,12 @@
 
 /* Pages */
 @import "pages/home";
-@import "pages/projects";
 @import "pages/info";
 @import "pages/user-login";
+
+@import "pages/projects/global";
+@import "pages/projects/vertical";
+@import "pages/projects/horizontal";
 
 /* Sections */
 @import "sections/header";

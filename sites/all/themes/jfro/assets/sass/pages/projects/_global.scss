@@ -4,28 +4,29 @@
 
 .project-description {
     position: relative;
+    .body {
+        margin-bottom: $base;
+    }
 }
 
 .project-description p {
     line-height: 1.3em;
     margin-bottom: 18px;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 }
 
-.project-description p:last-of-type {
-    margin-bottom: 0;
-}
-
-.project-description .social-links {
-    position: absolute;
-    bottom: 0;
-    right: 10px;
-    
+.social-links {
+    @include cf;
     .share {
         float: left;
     }
 }
 
-.project-description .social-links a {
+
+
+.social-links a {
     float: left;
     display: block;
     width: 16px;

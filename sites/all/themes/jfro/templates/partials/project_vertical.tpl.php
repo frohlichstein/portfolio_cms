@@ -14,7 +14,7 @@
                 <?php endif; ?>
                 
                 <?php if($project->link): ?>
-                <p><a href="<?php print $project->link; ?>"><?php print str_replace("http://", "", $project->link); ?></a></p>
+                <p class="site-link"><a href="<?php print $project->link; ?>"><?php print str_replace("http://", "", $project->link); ?></a></p>
                 <?php endif; ?>
                 
                 <div class="social-links">
