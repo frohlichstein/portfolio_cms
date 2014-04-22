@@ -13,7 +13,7 @@
 	            <div class="c2 col">
 	                <h2 class="title">Contact:</h2>
 	                <p>Jason Frohlichstein<br />
-	                +1(630) 546.8867<br />
+	                +1 (630) 546.8867<br />
 	                jason.frohlichstein@gmail.com</p>
 	            </div>
 	            
@@ -54,7 +54,7 @@
 
 	    <div class="c1 col instagram">
             <?php if($instagram_photos): ?>
-            <h2>Recent Instagrams:</h2>
+            <h2 class="title">Recent Instagrams:</h2>
             <div class="instagram-photos">
               <?php foreach($instagram_photos as $photo_url): ?>
               <div class="photo"><img src="<?php print $photo_url; ?>" /></div>
@@ -65,6 +65,32 @@
 
         <div class="c2-c4 col cf">
         
+            <div class="c3-c4 col experience">
+                <h2 class="title">Experience:</h2>
+                <ul class="info-list">
+                    <li>
+                        <p class="meta-info">Designer, Sept. 2009 - Present</p>
+                        <h3>Leo Burnett, Department of Design</h3>
+                        <p>Contribute and/or lead creativity for multiple international brands, from concept to creation for campaigns spanning print, digital, and environmental.</p>
+                    </li>
+                    <li>
+                        <p class="meta-info">Designer, Sept. 2009 - Present</p>
+                        <h3>Leo Burnett, Department of Design</h3>
+                        <p>Contribute and/or lead creativity for multiple international brands, from concept to creation for campaigns spanning print, digital, and environmental.</p>
+                    </li>
+                    <li>
+                        <p class="meta-info">Designer, Sept. 2009 - Present</p>
+                        <h3>Leo Burnett, Department of Design</h3>
+                        <p>Contribute and/or lead creativity for multiple international brands, from concept to creation for campaigns spanning print, digital, and environmental.</p>
+                    </li>
+                    <li>
+                        <p class="meta-info">Designer, Sept. 2009 - Present</p>
+                        <h3>Leo Burnett, Department of Design</h3>
+                        <p>Contribute and/or lead creativity for multiple international brands, from concept to creation for campaigns spanning print, digital, and environmental.</p>
+                    </li>
+                </ul>
+            </div>
+
             <div class="c2 col exhibition">
                 <h2 class="title">Exhibitions:</h2>
                 <ul class="info-list">
@@ -112,32 +138,6 @@
                         <h3>Estate Sale</h3>
                         <p>Curator for an exhibition featuring the work of artists Ryan Maher & Ariel Diaz.</p>
                         <p class="meta-info">Chicago Art Department, Chicago, IL - 2013</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="c3-c4 col experience">
-                <h2 class="title">Experience:</h2>
-                <ul class="info-list">
-                    <li>
-                        <p class="meta-info">Designer, Sept. 2009 - Present</p>
-                        <h3>Leo Burnett, Department of Design</h3>
-                        <p>Contribute and/or lead creativity for multiple international brands, from concept to creation for campaigns spanning print, digital, and environmental.</p>
-                    </li>
-                    <li>
-                        <p class="meta-info">Designer, Sept. 2009 - Present</p>
-                        <h3>Leo Burnett, Department of Design</h3>
-                        <p>Contribute and/or lead creativity for multiple international brands, from concept to creation for campaigns spanning print, digital, and environmental.</p>
-                    </li>
-                    <li>
-                        <p class="meta-info">Designer, Sept. 2009 - Present</p>
-                        <h3>Leo Burnett, Department of Design</h3>
-                        <p>Contribute and/or lead creativity for multiple international brands, from concept to creation for campaigns spanning print, digital, and environmental.</p>
-                    </li>
-                    <li>
-                        <p class="meta-info">Designer, Sept. 2009 - Present</p>
-                        <h3>Leo Burnett, Department of Design</h3>
-                        <p>Contribute and/or lead creativity for multiple international brands, from concept to creation for campaigns spanning print, digital, and environmental.</p>
                     </li>
                 </ul>
             </div>

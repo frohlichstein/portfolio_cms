@@ -477,33 +477,38 @@ input[type="submit"]:hover, button:hover {
 }
 
 /* line 32, ../sass/pages/_info.scss */
+.info-grid .experience {
+  float: right;
+}
+
+/* line 36, ../sass/pages/_info.scss */
 .info-grid .title {
   margin-bottom: 10px;
 }
 
-/* line 36, ../sass/pages/_info.scss */
+/* line 40, ../sass/pages/_info.scss */
 .info-list li {
   margin-bottom: 20px;
 }
 
-/* line 40, ../sass/pages/_info.scss */
+/* line 44, ../sass/pages/_info.scss */
 .info-list p {
   font-size: 14px;
   line-height: 20px;
 }
 
-/* line 45, ../sass/pages/_info.scss */
+/* line 49, ../sass/pages/_info.scss */
 .exhibition h3 {
   font-style: italic;
 }
 
-/* line 49, ../sass/pages/_info.scss */
+/* line 53, ../sass/pages/_info.scss */
 .instagram .title {
   margin-bottom: 14px;
 }
 
-/* line 53, ../sass/pages/_info.scss */
-.instagram li {
+/* line 57, ../sass/pages/_info.scss */
+.instagram .photo {
   margin-bottom: 20px;
 }
 
