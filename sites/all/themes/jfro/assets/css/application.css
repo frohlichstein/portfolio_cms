@@ -739,20 +739,23 @@ input[type="submit"]:hover, button:hover {
 
 /* line 38, ../sass/sections/_nav.scss */
 .nav .cat-toggle {
+  float: right;
   font-size: 18px;
+  margin-left: 20px;
   padding: 8px 0 0;
 }
-/* line 41, ../sass/sections/_nav.scss */
+/* line 43, ../sass/sections/_nav.scss */
 .nav .cat-toggle .cat-close {
   display: none;
 }
 
-/* line 46, ../sass/sections/_nav.scss */
+/* line 48, ../sass/sections/_nav.scss */
 .cat-nav {
+  float: right;
   display: none;
 }
 
-/* line 50, ../sass/sections/_nav.scss */
+/* line 53, ../sass/sections/_nav.scss */
 .cat-nav li {
   position: relative;
   float: left;
@@ -760,7 +763,7 @@ input[type="submit"]:hover, button:hover {
   padding-left: 20px;
 }
 
-/* line 57, ../sass/sections/_nav.scss */
+/* line 60, ../sass/sections/_nav.scss */
 .cat-nav li:not(:first-child):after {
   content: "//";
   position: absolute;

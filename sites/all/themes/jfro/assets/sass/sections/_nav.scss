@@ -36,7 +36,9 @@
 }
 
 .nav .cat-toggle {
+    float: right;
     font-size: 18px;
+    margin-left: 20px;
     padding: 8px 0 0;
     .cat-close {
         display: none;
@@ -44,6 +46,7 @@
 }
 
 .cat-nav {
+    float: right;
     display: none;
 }
 

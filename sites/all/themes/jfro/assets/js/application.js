@@ -5,10 +5,10 @@
 
 	// Category Toggle
 	function category_toggle() {
-    	$('.cat-open').click(function(e) {
+    	$('.cat-toggle').click(function(e) {
             e.preventDefault();
-    		$(this).hide();
-    		$('.cat-nav').show();
+    		$(this).find('span').toggle();
+    		$('.cat-nav').toggle();
     	});
 	}
 	
