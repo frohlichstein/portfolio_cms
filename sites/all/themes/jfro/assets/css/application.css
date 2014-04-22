@@ -218,8 +218,7 @@ a:hover {
   background: #81ceeb;
   color: #fff;
 }
-
-/* line 18, ../sass/global/_buttons.scss */
+/* line 16, ../sass/global/_buttons.scss */
 .btn:hover {
   background: #62a7c1;
   color: #fff;
@@ -440,78 +439,83 @@ input[type="submit"]:hover, button:hover {
 }
 
 /* line 2, ../sass/pages/_info.scss */
-.info-grid .col {
-  float: left;
+.info-grid {
+  margin: 0 -20px;
 }
 
 /* line 6, ../sass/pages/_info.scss */
-.info-grid .row {
+.info-grid [class*='col-'] {
   margin-bottom: 40px;
+  padding: 0 20px;
 }
 
-/* line 10, ../sass/pages/_info.scss */
-.info-grid .c1 {
-  width: 25.666%;
-  padding-right: 40px;
-}
-
-/* line 15, ../sass/pages/_info.scss */
-.info-grid .c2-c4 {
-  width: 74.333%;
-}
-
-/* line 19, ../sass/pages/_info.scss */
-.info-grid .c3-c4 {
-  width: 65.47%;
-}
-
-/* line 23, ../sass/pages/_info.scss */
-.info-grid .c2, .info-grid .c3 {
-  width: 34.529%;
-  padding-right: 40px;
-}
-
-/* line 28, ../sass/pages/_info.scss */
-.info-grid .c4 {
-  width: 30.941%;
-}
-
-/* line 32, ../sass/pages/_info.scss */
-.info-grid .experience {
+/* line 11, ../sass/pages/_info.scss */
+.info-grid .block-experience {
   float: right;
 }
 
-/* line 36, ../sass/pages/_info.scss */
+/* line 15, ../sass/pages/_info.scss */
 .info-grid .title {
   margin-bottom: 10px;
 }
 
-/* line 40, ../sass/pages/_info.scss */
+/* line 19, ../sass/pages/_info.scss */
 .info-list li {
   margin-bottom: 20px;
 }
+/* line 21, ../sass/pages/_info.scss */
+.info-list li:last-of-type {
+  margin-bottom: 0;
+}
 
-/* line 44, ../sass/pages/_info.scss */
+/* line 26, ../sass/pages/_info.scss */
 .info-list p {
   font-size: 14px;
   line-height: 20px;
 }
 
-/* line 49, ../sass/pages/_info.scss */
-.exhibition h3 {
+/* line 31, ../sass/pages/_info.scss */
+.block-exhibition h3 {
   font-style: italic;
 }
 
-/* line 53, ../sass/pages/_info.scss */
-.instagram .title {
+/* line 35, ../sass/pages/_info.scss */
+.block-instagram .title {
   margin-bottom: 14px;
 }
 
-/* line 57, ../sass/pages/_info.scss */
-.instagram .photo {
+/* line 39, ../sass/pages/_info.scss */
+.block-instagram .photo {
   margin-bottom: 20px;
 }
+/* line 41, ../sass/pages/_info.scss */
+.block-instagram .photo:last-of-type {
+  margin-bottom: 0;
+}
 
+/*
+.info-grid .c1 {
+    width: 25.666%;
+    padding-right: 40px;
+}
+
+.info-grid .c2-c4 {
+    width: 74.333%;
+}
+
+.info-grid .c3-c4 {
+    width: 65.47%;
+}
+
+.info-grid .c2, .info-grid .c3 {
+    width: 34.529%;
+    padding-right: 40px;
+}
+
+.info-grid .c4 {
+    width: 30.941%;
+}
+*/
 /* line 2, ../sass/pages/_user-login.scss */
 #user-login {
   max-width: 360px;
@@ -712,55 +716,53 @@ input[type="submit"]:hover, button:hover {
 .menu {
   float: left;
 }
-
-/* line 12, ../sass/sections/_nav.scss */
+/* line 10, ../sass/sections/_nav.scss */
 .menu.show {
   display: block;
 }
 
-/* line 16, ../sass/sections/_nav.scss */
+/* line 15, ../sass/sections/_nav.scss */
 .menu li {
   float: left;
   margin-right: 30px;
 }
-
-/* line 21, ../sass/sections/_nav.scss */
+/* line 18, ../sass/sections/_nav.scss */
 .menu li:last-child {
   margin-right: 0;
   padding-right: 0;
 }
 
-/* line 26, ../sass/sections/_nav.scss */
+/* line 24, ../sass/sections/_nav.scss */
 .menu .active,
 .node-type-project .first a {
   border-bottom: 2px solid #000;
 }
 
 /** Cat Nav **/
-/* line 34, ../sass/sections/_nav.scss */
+/* line 32, ../sass/sections/_nav.scss */
 .nav .categories {
   float: right;
 }
 
-/* line 38, ../sass/sections/_nav.scss */
+/* line 36, ../sass/sections/_nav.scss */
 .nav .cat-toggle {
   float: right;
   font-size: 18px;
   margin-left: 20px;
   padding: 8px 0 0;
 }
-/* line 43, ../sass/sections/_nav.scss */
+/* line 41, ../sass/sections/_nav.scss */
 .nav .cat-toggle .cat-close {
   display: none;
 }
 
-/* line 48, ../sass/sections/_nav.scss */
+/* line 46, ../sass/sections/_nav.scss */
 .cat-nav {
   float: right;
   display: none;
 }
 
-/* line 53, ../sass/sections/_nav.scss */
+/* line 51, ../sass/sections/_nav.scss */
 .cat-nav li {
   position: relative;
   float: left;
@@ -768,7 +770,7 @@ input[type="submit"]:hover, button:hover {
   padding-left: 20px;
 }
 
-/* line 60, ../sass/sections/_nav.scss */
+/* line 58, ../sass/sections/_nav.scss */
 .cat-nav li:not(:first-child):after {
   content: "//";
   position: absolute;

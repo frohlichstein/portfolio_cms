@@ -13,9 +13,8 @@ a {
 	border-radius: 5px;
 	background: #81ceeb;
 	color: #fff;
-}
-
-.btn:hover {
-	background: #62a7c1;
-	color: #fff;
+    &:hover {
+    	background: #62a7c1;
+    	color: #fff;
+    }
 }

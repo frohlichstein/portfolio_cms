@@ -7,20 +7,18 @@
 
 .menu {
     float: left;
-}
-
-.menu.show {
-    display: block;
+    &.show {
+        display: block;
+    }
 }
 
 .menu li {
     float: left;
     margin-right: 30px;
-}
-
-.menu li:last-child {
-	margin-right: 0;
-	padding-right: 0;
+    &:last-child {
+    	margin-right: 0;
+    	padding-right: 0;
+    }
 }
 
 .menu .active,
