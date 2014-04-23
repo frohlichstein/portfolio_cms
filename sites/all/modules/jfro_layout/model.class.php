@@ -23,7 +23,6 @@ class Meta
     }else if($field['widget']['type'] == 'media_generic'){
       if(empty($field_array['und'][0]['file'])) return '';
       $file = file_view_file($field_array['und'][0]['file']);
-      // dpm($file);
       $value = theme($file['#theme'], $file);
     // all other widgets
     }else{
@@ -54,6 +53,8 @@ class Model extends Meta {
       }
     }
 
+    $this->images = $this->images();
+
   }
 
   function title(){
@@ -69,22 +70,24 @@ class Model extends Meta {
     }
   }
 
-  function images($image_style){
+  function images(){
     $images = array();
-    foreach ($this->node->field_project_images['und'] as $image) {
+    foreach($this->node->field_images['und'] as $image){
+      $entity = array_shift(entity_load('field_collection_item', array($image['value'])));
       $image_markup_array = array(
-        'style_name' => $image_style,
-        'path' => $image['uri'],
+        'style_name' => $entity->field_size['und'][0]['value'],
+        'path' => $entity->field_image['und'][0]['uri'],
         'width' => NULL,
         'height' => NULL
       );
       $images[] = theme_image_style($image_markup_array);
     }
+    dpm($images);
     return $images;
   }
 
   function has_images(){
-    return !empty($this->node->field_project_images['und'][0]);
+    return !empty($this->node->field_images['und'][0]);
   }
 
   function next(){
