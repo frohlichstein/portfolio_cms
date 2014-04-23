@@ -25,7 +25,7 @@
 <?php endif; ?>
 
 <?php if($project->has_images): ?>
-  <?php foreach($project->images('medium') as $image): ?>
+  <?php foreach($project->images as $image): ?>
   <div class="image"><?php print $image ?></div>
   <?php endforeach; ?>
 <?php endif; ?>
