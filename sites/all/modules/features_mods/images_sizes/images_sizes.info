@@ -1,0 +1,11 @@
+name = Images Sizes
+core = 7.x
+package = Features
+dependencies[] = image
+features[features_api][] = api:2
+features[image][] = size-100
+features[image][] = size-25
+features[image][] = size-33
+features[image][] = size-50
+features[image][] = size-66
+features[image][] = size-75
