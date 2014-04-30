@@ -546,7 +546,7 @@ input[type="submit"]:hover, button:hover {
   margin-bottom: 0;
 }
 
-/* line 20, ../sass/pages/projects/_global.scss */
+/* line 22, ../sass/pages/projects/_global.scss */
 .social-links {
   *zoom: 1;
 }
@@ -559,35 +559,51 @@ input[type="submit"]:hover, button:hover {
 .social-links:after {
   clear: both;
 }
-/* line 22, ../sass/pages/projects/_global.scss */
-.social-links .share {
+/* line 24, ../sass/pages/projects/_global.scss */
+.social-links [class*="share-"] {
   float: left;
 }
 
 /* line 29, ../sass/pages/projects/_global.scss */
-.social-links a {
-  float: left;
-  display: block;
-  width: 16px;
-  height: 16px;
-  margin-left: 6px;
-  background: #ccc;
+.social-links .share-toggle {
+  float: right;
+  font-weight: 700;
 }
 
-/* line 38, ../sass/pages/projects/_global.scss */
+/* line 34, ../sass/pages/projects/_global.scss */
+.share-modal {
+  display: none;
+  float: right;
+}
+/* line 37, ../sass/pages/projects/_global.scss */
+.share-modal.show {
+  display: block;
+}
+/* line 40, ../sass/pages/projects/_global.scss */
+.share-modal .share-fb {
+  margin-right: 16px;
+}
+/* line 43, ../sass/pages/projects/_global.scss */
+.share-modal .fb-like > span {
+  width: 80px !important;
+  height: 20px !important;
+  vertical-align: top !important;
+}
+
+/* line 50, ../sass/pages/projects/_global.scss */
 .project-credits p,
 .project-awards p {
   font-size: 12px;
   line-height: 1.4em;
 }
 
-/* line 44, ../sass/pages/projects/_global.scss */
+/* line 56, ../sass/pages/projects/_global.scss */
 .project-credits h3 {
   font: 700 12px/1.4em "proxima-nova", Helvetica, arial, sans-serif;
 }
 
 /** PROJECT IMAGES ================**/
-/* line 53, ../sass/pages/projects/_global.scss */
+/* line 65, ../sass/pages/projects/_global.scss */
 .project-image-grid .col {
   float: left;
   margin-bottom: 20px;
@@ -595,7 +611,7 @@ input[type="submit"]:hover, button:hover {
 }
 
 /** PROJECT NAV ================**/
-/* line 64, ../sass/pages/projects/_global.scss */
+/* line 76, ../sass/pages/projects/_global.scss */
 .project-nav {
   clear: both;
   position: relative;
@@ -603,19 +619,19 @@ input[type="submit"]:hover, button:hover {
   text-align: center;
 }
 
-/* line 71, ../sass/pages/projects/_global.scss */
+/* line 83, ../sass/pages/projects/_global.scss */
 .project-nav a {
   position: absolute;
   display: block;
   background: url(../images/sprite.svg) no-repeat;
 }
 
-/* line 77, ../sass/pages/projects/_global.scss */
+/* line 89, ../sass/pages/projects/_global.scss */
 .project-nav a:hover {
   opacity: 0.5;
 }
 
-/* line 81, ../sass/pages/projects/_global.scss */
+/* line 93, ../sass/pages/projects/_global.scss */
 .project-nav .previous,
 .project-nav .next {
   bottom: 0;
@@ -623,24 +639,24 @@ input[type="submit"]:hover, button:hover {
   height: 21px;
 }
 
-/* line 88, ../sass/pages/projects/_global.scss */
+/* line 100, ../sass/pages/projects/_global.scss */
 .project-nav .previous {
   left: 0;
 }
 
-/* line 92, ../sass/pages/projects/_global.scss */
+/* line 104, ../sass/pages/projects/_global.scss */
 .project-nav .next {
   right: 0;
   background-position: -14px 0;
 }
 
-/* line 97, ../sass/pages/projects/_global.scss */
+/* line 109, ../sass/pages/projects/_global.scss */
 .project-nav .back-to-thumbs,
 .project-nav .scroll-top {
   left: 50%;
 }
 
-/* line 102, ../sass/pages/projects/_global.scss */
+/* line 114, ../sass/pages/projects/_global.scss */
 .project-nav .scroll-top {
   width: 21px;
   height: 12px;
@@ -648,7 +664,7 @@ input[type="submit"]:hover, button:hover {
   background-position: 0 -23px;
 }
 
-/* line 109, ../sass/pages/projects/_global.scss */
+/* line 121, ../sass/pages/projects/_global.scss */
 .project-nav .back-to-thumbs {
   bottom: 0;
   width: 20px;

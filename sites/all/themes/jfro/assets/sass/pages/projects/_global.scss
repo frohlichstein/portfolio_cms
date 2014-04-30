@@ -17,22 +17,34 @@
     }
 }
 
+
+
 .social-links {
     @include cf;
-    .share {
+    [class*="share-"] {
         float: left;
     }
 }
 
+.social-links .share-toggle {
+    float: right;
+    font-weight: $bold;
+}
 
-
-.social-links a {
-    float: left;
-    display: block;
-    width: 16px;
-    height: 16px;
-    margin-left: 6px;
-    background: #ccc;
+.share-modal {
+    display: none;
+    float: right;
+    &.show {
+        display: block;
+    }
+    .share-fb {
+        margin-right: 16px;
+    }
+    .fb-like > span {
+        width: 80px !important;
+        height: 20px !important;
+        vertical-align: top !important;
+    }
 }
 
 .project-credits p,

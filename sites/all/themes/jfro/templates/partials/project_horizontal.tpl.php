@@ -20,7 +20,10 @@
                     <?php endif; ?>
 
                     <div class="social-links">
-                        <?php print theme("project_share", array("project" => $project)); ?>
+                        <div class="share-modal">
+                            <?php print theme("project_share", array("project" => $project)); ?>
+                        </div>
+                        <a href="" class="share-toggle">Share +</a>
                     </div>
 
                 </div>

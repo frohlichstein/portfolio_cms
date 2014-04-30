@@ -10,12 +10,25 @@
     		$(this).find('span').toggle();
     		$('.cat-nav').toggle();
     	});
+    	$('.show a').click(function(e) {
+            e.preventDefault();
+        	$('.main-nav').removeClass('show');
+    	});
 	}
 	
-	$('.show a').click(function(){
-    	$('.main-nav').removeClass('show');
-	});
 
+	// Share Toggle
+	function share_toggle() {
+    	$('.share-toggle').click(function(e) {
+    		$('.share-modal').addClass('show');
+            e.preventDefault();
+    	});
+        $('.share-modal .close').click(function(){
+            e.preventDefault();
+        	$('.share-modal').removeClass('show');
+        });
+	}
+	
 
     // Scroll Top
     function back_to_top() {
@@ -39,6 +52,7 @@
 	    resize_thumbs();
 	});
 	category_toggle();
+	share_toggle();
 	back_to_top();
 	mobile_menu_btn();
 
