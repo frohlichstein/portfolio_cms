@@ -2,6 +2,23 @@
 
   $(function(){
 
+    // Random Blurb
+    function random_blurb() {
+        var blurbArray = [
+            "Get to the chopper!",
+            "I'm a cop you idiot",
+            "Kolhagan, get these people air!",
+            "Who is your daddy and what does he do?",
+            "Get dooooown!",
+            "Freeze!"
+        ];
+        
+        function getBlurb() {
+            return blurbArray[Math.floor(Math.random() * blurbArray.length)];
+        }
+        
+        $('.quote').text(getBlurb());
+    }
 
 	// Category Toggle
 	function category_toggle() {
@@ -51,6 +68,7 @@
 	$(window).on('resize', function() {
 	    resize_thumbs();
 	});
+	random_blurb();
 	category_toggle();
 	share_toggle();
 	back_to_top();
