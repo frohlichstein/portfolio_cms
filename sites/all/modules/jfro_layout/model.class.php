@@ -80,9 +80,8 @@ class Model extends Meta {
         'width' => NULL,
         'height' => NULL
       );
-      $images[] = theme_image_style($image_markup_array);
+      $images[] = array("markup" => theme_image_style($image_markup_array), "classname" => $entity->field_size['und'][0]['value']);
     }
-    dpm($images);
     return $images;
   }
 

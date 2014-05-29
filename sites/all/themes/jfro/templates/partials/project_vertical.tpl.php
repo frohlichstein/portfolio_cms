@@ -54,7 +54,7 @@
 
     <?php if($project->has_images): ?>
       <?php foreach($project->images as $image): ?>
-      <div class="image"><?php print $image ?></div>
+      <div class="image image-<?php print $image["classname"] ?>"><?php print $image["markup"] ?></div>
       <?php endforeach; ?>
     <?php endif; ?>
 
