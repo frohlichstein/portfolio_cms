@@ -20,10 +20,8 @@
                     <?php endif; ?>
 
                     <div class="social-links">
-                        <div class="share-modal">
-                            <?php print theme("project_share", array("project" => $project)); ?>
-                        </div>
-                        <a href="" class="share-toggle">Share +</a>
+                      <a href="http://www.facebook.com/sharer.php?s=100&p[url]=https://twitter.com" target="_blank" class="icon-facebook">fb</a>
+                      <a target="_blank" href="https://twitter.com/intent/tweet?original_referer=<%= url %>&amp;source=tweetbutton&amp;text=<%= text %> - <%= url %>" class="icon-twitter">tw</a>
                     </div>
 
                 </div>

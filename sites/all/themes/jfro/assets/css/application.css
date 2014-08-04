@@ -429,9 +429,26 @@ input[type="submit"]:hover, button:hover {
   color: #fff;
 }
 
-/*
-@import "global/icons";
-*/
+/* line 2, ../sass/global/_icons.scss */
+[class*="icon-"] {
+  display: block;
+  background: url('../images/sprite.svg?1395444604') no-repeat no-repeat 0 0;
+}
+
+/* line 7, ../sass/global/_icons.scss */
+.icon-twitter {
+  width: 26px;
+  height: 21px;
+  background-position: 0 -350px;
+}
+
+/* line 13, ../sass/global/_icons.scss */
+.icon-facebook {
+  width: 13px;
+  height: 22px;
+  background-position: 0 -374px;
+}
+
 /* Modules */
 /* Pages */
 /* line 2, ../sass/pages/_home.scss */
@@ -651,69 +668,6 @@ input[type="submit"]:hover, button:hover {
   padding: 0 10px;
 }
 
-/** PROJECT NAV ================**/
-/* line 76, ../sass/pages/projects/_global.scss */
-.project-nav {
-  clear: both;
-  position: relative;
-  height: 40px;
-  text-align: center;
-}
-
-/* line 83, ../sass/pages/projects/_global.scss */
-.project-nav a {
-  position: absolute;
-  display: block;
-  background: url(../images/sprite.svg) no-repeat;
-}
-
-/* line 89, ../sass/pages/projects/_global.scss */
-.project-nav a:hover {
-  opacity: 0.5;
-}
-
-/* line 94, ../sass/pages/projects/_global.scss */
-.project-nav .previous,
-.project-nav .next {
-  bottom: 0;
-  width: 12px;
-  height: 21px;
-}
-
-/* line 100, ../sass/pages/projects/_global.scss */
-.project-nav .previous {
-  left: 0;
-}
-
-/* line 104, ../sass/pages/projects/_global.scss */
-.project-nav .next {
-  right: 0;
-  background-position: -14px 0;
-}
-
-/* line 110, ../sass/pages/projects/_global.scss */
-.project-nav .back-to-thumbs,
-.project-nav .scroll-top {
-  left: 50%;
-}
-
-/* line 114, ../sass/pages/projects/_global.scss */
-.project-nav .scroll-top {
-  width: 21px;
-  height: 12px;
-  margin-left: -10px;
-  background-position: 0 -23px;
-}
-
-/* line 121, ../sass/pages/projects/_global.scss */
-.project-nav .back-to-thumbs {
-  bottom: 0;
-  width: 20px;
-  height: 20px;
-  margin-left: -10px;
-  background-position: 0 -50px;
-}
-
 /* line 2, ../sass/pages/projects/_vertical.scss */
 .project-layout-vert .grid {
   margin: 0;
@@ -809,6 +763,68 @@ input[type="submit"]:hover, button:hover {
   position: absolute;
   bottom: 0;
   right: 10px;
+}
+
+/* line 2, ../sass/pages/projects/_nav.scss */
+.project-nav {
+  clear: both;
+  position: relative;
+  height: 40px;
+  text-align: center;
+}
+
+/* line 9, ../sass/pages/projects/_nav.scss */
+.project-nav a {
+  position: absolute;
+  display: block;
+  background: url(../images/sprite.svg) no-repeat;
+}
+
+/* line 15, ../sass/pages/projects/_nav.scss */
+.project-nav a:hover {
+  opacity: 0.5;
+}
+
+/* line 20, ../sass/pages/projects/_nav.scss */
+.project-nav .previous,
+.project-nav .next {
+  bottom: 0;
+  width: 12px;
+  height: 21px;
+}
+
+/* line 26, ../sass/pages/projects/_nav.scss */
+.project-nav .previous {
+  left: 0;
+}
+
+/* line 30, ../sass/pages/projects/_nav.scss */
+.project-nav .next {
+  right: 0;
+  background-position: -14px 0;
+}
+
+/* line 36, ../sass/pages/projects/_nav.scss */
+.project-nav .back-to-thumbs,
+.project-nav .scroll-top {
+  left: 50%;
+}
+
+/* line 40, ../sass/pages/projects/_nav.scss */
+.project-nav .scroll-top {
+  width: 21px;
+  height: 12px;
+  margin-left: -10px;
+  background-position: 0 -23px;
+}
+
+/* line 47, ../sass/pages/projects/_nav.scss */
+.project-nav .back-to-thumbs {
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  background-position: 0 -50px;
 }
 
 /* Sections */

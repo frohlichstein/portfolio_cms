@@ -1,0 +1,54 @@
+
+.project-nav {
+    clear: both;
+    position: relative;
+    height: 40px;
+    text-align: center;
+}
+
+.project-nav a {
+    position: absolute;
+    display: block;
+    background: url(../images/sprite.svg) no-repeat;
+}
+
+.project-nav a:hover {
+    opacity: 0.5;
+}
+
+.project-nav .previous,
+.project-nav .next {
+    bottom: 0;
+    width: 12px;
+    height: 21px;
+}
+
+.project-nav .previous {
+    left: 0;
+}
+
+.project-nav .next {
+    right: 0;
+    background-position: -14px 0;
+}
+
+.project-nav .back-to-thumbs,
+.project-nav .scroll-top {
+    left: 50%;
+}
+
+.project-nav .scroll-top {
+    width: 21px;
+    height: 12px;
+    margin-left: -10px;
+    background-position: 0 -23px;
+}
+
+.project-nav .back-to-thumbs {
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    background-position: 0 -50px;
+}
+
