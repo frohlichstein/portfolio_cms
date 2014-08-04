@@ -1,5 +1,3 @@
-<!-- Vertical layout, place these items where you will! -->
-
 <div class="project-layout-vert grid">
 
   <aside class="col-1-4 left-sidebar project-info">
@@ -12,15 +10,14 @@
         <?php if($project->body): ?>
         <div class="body"><?php print $project->body; ?></div>
         <?php endif; ?>
-
+        
         <?php if($project->link): ?>
         <p class="site-link"><a href="<?php print $project->link; ?>"><?php print str_replace("http://", "", $project->link); ?></a></p>
         <?php endif; ?>
-
+        
         <div class="social-links">
           <a href="http://www.facebook.com/sharer.php?s=100&p[url]=https://twitter.com" target="_blank" class="icon-facebook">fb</a>
           <a target="_blank" href="https://twitter.com/intent/tweet?original_referer=<%= url %>&amp;source=tweetbutton&amp;text=<%= text %> - <%= url %>" class="icon-twitter">tw</a>
-
         </div>
 
       </div>
@@ -35,7 +32,7 @@
           <?php endif; ?>
         </div>
       </div>
-  
+      
       <div class="project-awards">
         <div class="wrap">
           <?php if($project->extra_info_2): ?>
@@ -43,11 +40,11 @@
           <?php endif; ?>
         </div>
       </div>
-      
+    
     </div>
-
+  
   </aside>
-
+  
   <section class="col-3-4">
     <div class="project-images">
       <?php if($project->video): ?>
