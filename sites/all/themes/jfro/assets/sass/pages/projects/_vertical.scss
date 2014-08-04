@@ -1,7 +1,40 @@
 
+.project-layout-vert .grid {
+  margin: 0;
+  
+  @include bp-max-width($large) {
+    margin: 0 -10px;
+  }  
+}
+
+.project-layout-vert .col-1-4,
+.project-layout-vert .col-3-4 {
+  @include bp-max-width($large) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.project-layout-horiz .project-images {
+  margin: 0 0 $base;
+
+  @include bp-max-width($large) {
+    margin: 0 -10px;
+  }
+}
+
 .project-layout-vert .project-description,
 .project-layout-vert .project-credits {
     margin-bottom: 40px;
+}
+
+.project-layout-vert .project-credits,
+.project-layout-vert .project-awards {
+  @include bp-max-width($large) {
+    float: left;
+    width: 50%;
+    padding: 0 $pad;
+  }
 }
 
 .site-link {

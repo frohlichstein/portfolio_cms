@@ -269,48 +269,89 @@ a:hover {
 .col-1-4 {
   width: 25%;
 }
+
 @media (max-width: 880px) {
-  /* line 30, ../sass/global/_grid.scss */
-  .col-1-4 {
+  /* line 34, ../sass/global/_grid.scss */
+  .grid-col-4 .col-1-4 {
     width: 50%;
     margin-bottom: 22px;
   }
-  /* line 36, ../sass/global/_grid.scss */
-  .col-1-4:nth-child(2n+1) {
+  /* line 39, ../sass/global/_grid.scss */
+  .grid-col-4 .col-1-4:nth-child(2n+1) {
     clear: left;
   }
 }
 
-/*
-
-.col-1-3 {
-    width: 33.33%;
-    
-    &:nth-child(3n+1) {
-        clear: left;
-        @include bp-max-width($large) {
-            clear: none;
-        }
-    }
-
-    @include bp-max-width($large) {
-        width: 50%;
-        margin-bottom: $base;
-        &:nth-child(2n+1) {
-            clear: left;
-        }
-    }
-
-    @include bp-max-width($small) {
-        float: none;
-        width: 100%;
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
+/** PROJECT IMAGE GRID ==========**/
+/* line 49, ../sass/global/_grid.scss */
+.project-images {
+  *zoom: 1;
 }
-*/
+/* line 2, ../sass/global/_mixins.scss */
+.project-images:before, .project-images:after {
+  content: " ";
+  display: block;
+}
+/* line 6, ../sass/global/_mixins.scss */
+.project-images:after {
+  clear: both;
+}
+
+/* line 53, ../sass/global/_grid.scss */
+[class*='image-'] {
+  float: left;
+  padding: 0 10px;
+  margin-bottom: 22px;
+}
+
+/* line 59, ../sass/global/_grid.scss */
+.image-size-25 {
+  width: 25%;
+}
+
+/* line 63, ../sass/global/_grid.scss */
+.image-size-33 {
+  width: 33.33%;
+}
+
+/* line 67, ../sass/global/_grid.scss */
+.image-size-50 {
+  width: 50%;
+}
+@media (max-width: 600px) {
+  /* line 67, ../sass/global/_grid.scss */
+  .image-size-50 {
+    width: 100%;
+  }
+}
+
+/* line 75, ../sass/global/_grid.scss */
+.image-size-66 {
+  width: 66.66%;
+}
+@media (max-width: 600px) {
+  /* line 75, ../sass/global/_grid.scss */
+  .image-size-66 {
+    width: 100%;
+  }
+}
+
+/* line 83, ../sass/global/_grid.scss */
+.image-size-75 {
+  width: 75%;
+}
+@media (max-width: 600px) {
+  /* line 83, ../sass/global/_grid.scss */
+  .image-size-75 {
+    width: 100%;
+  }
+}
+
+/* line 91, ../sass/global/_grid.scss */
+.image-size-100 {
+  width: 100%;
+}
+
 /* line 2, ../sass/global/_forms.scss */
 .form-item {
   margin-bottom: 12px;
@@ -332,7 +373,7 @@ label {
   font-size: 16px;
 }
 
-/* line 20, ../sass/global/_forms.scss */
+/* line 24, ../sass/global/_forms.scss */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -346,7 +387,7 @@ select {
   font: 400 1em/1em "proxima-nova", Helvetica, arial, sans-serif;
 }
 
-/* line 33, ../sass/global/_forms.scss */
+/* line 36, ../sass/global/_forms.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
@@ -590,7 +631,7 @@ input[type="submit"]:hover, button:hover {
   vertical-align: top !important;
 }
 
-/* line 50, ../sass/pages/projects/_global.scss */
+/* line 51, ../sass/pages/projects/_global.scss */
 .project-credits p,
 .project-awards p {
   font-size: 12px;
@@ -631,7 +672,7 @@ input[type="submit"]:hover, button:hover {
   opacity: 0.5;
 }
 
-/* line 93, ../sass/pages/projects/_global.scss */
+/* line 94, ../sass/pages/projects/_global.scss */
 .project-nav .previous,
 .project-nav .next {
   bottom: 0;
@@ -650,7 +691,7 @@ input[type="submit"]:hover, button:hover {
   background-position: -14px 0;
 }
 
-/* line 109, ../sass/pages/projects/_global.scss */
+/* line 110, ../sass/pages/projects/_global.scss */
 .project-nav .back-to-thumbs,
 .project-nav .scroll-top {
   left: 50%;
@@ -674,22 +715,96 @@ input[type="submit"]:hover, button:hover {
 }
 
 /* line 2, ../sass/pages/projects/_vertical.scss */
+.project-layout-vert .grid {
+  margin: 0;
+}
+@media (max-width: 880px) {
+  /* line 2, ../sass/pages/projects/_vertical.scss */
+  .project-layout-vert .grid {
+    margin: 0 -10px;
+  }
+}
+
+@media (max-width: 880px) {
+  /* line 11, ../sass/pages/projects/_vertical.scss */
+  .project-layout-vert .col-1-4,
+  .project-layout-vert .col-3-4 {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* line 18, ../sass/pages/projects/_vertical.scss */
+.project-layout-horiz .project-images {
+  margin: 0 0 22px;
+}
+@media (max-width: 880px) {
+  /* line 18, ../sass/pages/projects/_vertical.scss */
+  .project-layout-horiz .project-images {
+    margin: 0 -10px;
+  }
+}
+
+/* line 27, ../sass/pages/projects/_vertical.scss */
 .project-layout-vert .project-description,
 .project-layout-vert .project-credits {
   margin-bottom: 40px;
 }
 
-/* line 7, ../sass/pages/projects/_vertical.scss */
+@media (max-width: 880px) {
+  /* line 32, ../sass/pages/projects/_vertical.scss */
+  .project-layout-vert .project-credits,
+  .project-layout-vert .project-awards {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+  }
+}
+
+/* line 40, ../sass/pages/projects/_vertical.scss */
 .site-link {
   margin-bottom: 22px;
 }
 
-/* line 3, ../sass/pages/projects/_horizontal.scss */
+/* line 2, ../sass/pages/projects/_horizontal.scss */
+.project-layout-horiz .project-images {
+  margin: 0 -10px 22px;
+}
+
+@media (max-width: 880px) {
+  /* line 6, ../sass/pages/projects/_horizontal.scss */
+  .project-layout-horiz .col-1-2 {
+    width: 100%;
+    margin-bottom: 22px;
+  }
+}
+
+@media (max-width: 880px) {
+  /* line 14, ../sass/pages/projects/_horizontal.scss */
+  .project-layout-horiz .col-1-4 {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  /* line 14, ../sass/pages/projects/_horizontal.scss */
+  .project-layout-horiz .col-1-4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 24, ../sass/pages/projects/_horizontal.scss */
+  .project-layout-horiz .project-credits {
+    margin-bottom: 22px;
+  }
+}
+
+/* line 30, ../sass/pages/projects/_horizontal.scss */
 .project-layout-horiz .project-info {
   margin-bottom: 60px;
 }
 
-/* line 7, ../sass/pages/projects/_horizontal.scss */
+/* line 34, ../sass/pages/projects/_horizontal.scss */
 .project-layout-horiz .social-links {
   position: absolute;
   bottom: 0;
@@ -748,7 +863,7 @@ input[type="submit"]:hover, button:hover {
   padding-right: 0;
 }
 
-/* line 24, ../sass/sections/_nav.scss */
+/* line 25, ../sass/sections/_nav.scss */
 .menu .active,
 .node-type-project .first a {
   border-bottom: 2px solid #000;
