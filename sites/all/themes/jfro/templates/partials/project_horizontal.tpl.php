@@ -17,8 +17,8 @@
           <?php endif; ?>
           
           <div class="social-links">
-            <a href="http://www.facebook.com/sharer.php?s=100&p[url]=https://twitter.com" target="_blank" class="icon-facebook">fb</a>
-            <a target="_blank" href="https://twitter.com/intent/tweet?original_referer=<%= url %>&amp;source=tweetbutton&amp;text=<%= text %> - <%= url %>" class="icon-twitter">tw</a>
+            <a target="_blank" href="https://twitter.com/intent/tweet?original_referer=<?php echo $GLOBALS['base_url'] . $project->path; ?>&amp;source=tweetbutton&amp;text=<?php print $project->title; ?> - <?php echo $GLOBALS['base_url'] . $project->path; ?>" class="icon-twitter"></a>
+            <a href="http://www.facebook.com/sharer.php?s=100&p[url]=<?php echo $GLOBALS['base_url'] . $project->path; ?>" target="_blank" class="icon-facebook"></a>
           </div>
         
         </div>

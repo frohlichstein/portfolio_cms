@@ -1,60 +1,44 @@
 .project .project-title {
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 .project-description {
-    position: relative;
-    .body {
-        margin-bottom: $base;
-    }
+  position: relative;
+
+  .body {
+    margin-bottom: $base;
+  }
 }
 
 .project-description p {
-    line-height: 1.3em;
-    margin-bottom: 18px;
-    &:last-of-type {
-        margin-bottom: 0;
-    }
+  line-height: 1.3em;
+  margin-bottom: 18px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 
 
 .social-links {
-    @include cf;
-    [class*="share-"] {
-        float: left;
-    }
+  @include cf;
+
+  [class*="ico-"] {
+    float: left;
+    margin-left: 4px;
+  }
 }
 
-.social-links .share-toggle {
-    float: right;
-    font-weight: $bold;
-}
-
-.share-modal {
-    display: none;
-    float: right;
-    &.show {
-        display: block;
-    }
-    .share-fb {
-        margin-right: 16px;
-    }
-    .fb-like > span {
-        width: 80px !important;
-        height: 20px !important;
-        vertical-align: top !important;
-    }
-}
 
 .project-credits p,
 .project-awards p {
-    font-size: 12px;
-    line-height: 1.4em;
+font-size: 12px;
+line-height: 1.4em;
 }
 
 .project-credits h3 {
-    font: 700 12px/1.4em $proxima;
+font: 700 12px/1.4em $proxima;
 }
 
 
@@ -63,9 +47,9 @@
 .project-vert-layout .project-images {}
 
 .project-image-grid .col {
-    float: left;
-    margin-bottom: 20px;
-    padding: 0 10px;
+float: left;
+margin-bottom: 20px;
+padding: 0 10px;
 }
 
 .project-image-grid {}

@@ -1,17 +1,17 @@
 
 [class*="icon-"] {
-    display: block;
+    display: inline-block;
     background: $sprite no-repeat 0 0;
 }
 
 .icon-twitter {
-    width: 26px;
-    height: 21px;
-    background-position: 0 -350px;
+    width: 17px;
+    height: 14px;
+    background-position: 0 -84px;
 }
 
 .icon-facebook {
-    width: 13px;
-    height: 22px;
-    background-position: 0 -374px;
+    width: 8px;
+    height: 16px;
+    background-position: -19px -84px;
 }

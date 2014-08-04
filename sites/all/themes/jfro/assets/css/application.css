@@ -431,22 +431,22 @@ input[type="submit"]:hover, button:hover {
 
 /* line 2, ../sass/global/_icons.scss */
 [class*="icon-"] {
-  display: block;
-  background: url('../images/sprite.svg?1395444604') no-repeat no-repeat 0 0;
+  display: inline-block;
+  background: url('../images/sprite.svg?1407187374') no-repeat no-repeat 0 0;
 }
 
 /* line 7, ../sass/global/_icons.scss */
 .icon-twitter {
-  width: 26px;
-  height: 21px;
-  background-position: 0 -350px;
+  width: 17px;
+  height: 14px;
+  background-position: 0 -84px;
 }
 
 /* line 13, ../sass/global/_icons.scss */
 .icon-facebook {
-  width: 13px;
-  height: 22px;
-  background-position: 0 -374px;
+  width: 8px;
+  height: 16px;
+  background-position: -19px -84px;
 }
 
 /* Modules */
@@ -589,22 +589,22 @@ input[type="submit"]:hover, button:hover {
 .project-description {
   position: relative;
 }
-/* line 7, ../sass/pages/projects/_global.scss */
+/* line 8, ../sass/pages/projects/_global.scss */
 .project-description .body {
   margin-bottom: 22px;
 }
 
-/* line 12, ../sass/pages/projects/_global.scss */
+/* line 13, ../sass/pages/projects/_global.scss */
 .project-description p {
   line-height: 1.3em;
   margin-bottom: 18px;
 }
-/* line 15, ../sass/pages/projects/_global.scss */
+/* line 17, ../sass/pages/projects/_global.scss */
 .project-description p:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 22, ../sass/pages/projects/_global.scss */
+/* line 24, ../sass/pages/projects/_global.scss */
 .social-links {
   *zoom: 1;
 }
@@ -617,51 +617,26 @@ input[type="submit"]:hover, button:hover {
 .social-links:after {
   clear: both;
 }
-/* line 24, ../sass/pages/projects/_global.scss */
-.social-links [class*="share-"] {
+/* line 27, ../sass/pages/projects/_global.scss */
+.social-links [class*="ico-"] {
   float: left;
+  margin-left: 4px;
 }
 
-/* line 29, ../sass/pages/projects/_global.scss */
-.social-links .share-toggle {
-  float: right;
-  font-weight: 700;
-}
-
-/* line 34, ../sass/pages/projects/_global.scss */
-.share-modal {
-  display: none;
-  float: right;
-}
-/* line 37, ../sass/pages/projects/_global.scss */
-.share-modal.show {
-  display: block;
-}
-/* line 40, ../sass/pages/projects/_global.scss */
-.share-modal .share-fb {
-  margin-right: 16px;
-}
-/* line 43, ../sass/pages/projects/_global.scss */
-.share-modal .fb-like > span {
-  width: 80px !important;
-  height: 20px !important;
-  vertical-align: top !important;
-}
-
-/* line 51, ../sass/pages/projects/_global.scss */
+/* line 35, ../sass/pages/projects/_global.scss */
 .project-credits p,
 .project-awards p {
   font-size: 12px;
   line-height: 1.4em;
 }
 
-/* line 56, ../sass/pages/projects/_global.scss */
+/* line 40, ../sass/pages/projects/_global.scss */
 .project-credits h3 {
   font: 700 12px/1.4em "proxima-nova", Helvetica, arial, sans-serif;
 }
 
 /** PROJECT IMAGES ================**/
-/* line 65, ../sass/pages/projects/_global.scss */
+/* line 49, ../sass/pages/projects/_global.scss */
 .project-image-grid .col {
   float: left;
   margin-bottom: 20px;
