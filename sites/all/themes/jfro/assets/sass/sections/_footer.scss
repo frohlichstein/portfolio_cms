@@ -7,7 +7,6 @@
 }
 
 .footer .copyright {
-
   @include bp-min-width($small) {
     float: left;
   }

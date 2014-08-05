@@ -1,10 +1,11 @@
 a {
-    outline: none;
+  outline: none;
 	color: #000;
 	text-decoration: none;
+	
 	&:hover {
-    	color: $grey;
-    }
+  	color: $grey;
+  }
 }
 
 .btn {
@@ -13,8 +14,9 @@ a {
 	border-radius: 5px;
 	background: #81ceeb;
 	color: #fff;
-    &:hover {
-    	background: #62a7c1;
-    	color: #fff;
-    }
+
+  &:hover {
+  	background: #62a7c1;
+  	color: #fff;
+  }
 }

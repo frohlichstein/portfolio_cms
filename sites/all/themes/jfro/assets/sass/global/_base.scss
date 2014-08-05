@@ -1,19 +1,19 @@
 .wrapper {
-    @include cf;
+  @include cf;
 	position: relative;
 	max-width: 1600px;
 	margin: 0 30px;
 }
 
 .header .wrapper {
-    padding: 20px 0;
-    border-bottom: 2px solid #000;
+  padding: 20px 0;
+  border-bottom: 2px solid #000;
 }
 
 .main .wrapper {
-    padding: 40px 0 20px;
+  padding: 40px 0 20px;
 }
 
 .messages {
-    display: none;
+  display: none;
 }

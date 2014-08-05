@@ -465,29 +465,6 @@ input[type="submit"]:hover, button:hover {
   margin-bottom: 0;
 }
 
-/*
-.info-grid .c1 {
-    width: 25.666%;
-    padding-right: 40px;
-}
-
-.info-grid .c2-c4 {
-    width: 74.333%;
-}
-
-.info-grid .c3-c4 {
-    width: 65.47%;
-}
-
-.info-grid .c2, .info-grid .c3 {
-    width: 34.529%;
-    padding-right: 40px;
-}
-
-.info-grid .c4 {
-    width: 30.941%;
-}
-*/
 #user-login {
   max-width: 360px;
   margin: 0 auto 88px;

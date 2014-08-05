@@ -1,11 +1,13 @@
 
 .form-item {
 	margin-bottom: 12px;
+	
 	&:last-of-type {
-    	margin-bottom: 0;
+  	margin-bottom: 0;
 	}
+	
 	.description {
-    	font-size: 12px;
+  	font-size: 12px;
 	}
 }
 
@@ -58,9 +60,9 @@ input[type="submit"], button {
 	-o-transition: all 0.15s ease-in-out;
 	cursor: pointer;
 
-    @include bp-max-width($small) {
-        width: 100%;
-    }
+  @include bp-max-width($small) {
+      width: 100%;
+  }
 }
 
 input[type="submit"]:hover, button:hover {
