@@ -1,38 +1,33 @@
 
-.project-layout-horiz .project-images {
-  margin: 0 -10px $base;
-}
-
 .project-layout-horiz .col-1-2 {
   @include bp-max-width($large) {
     width: 100%;
-    margin-bottom: $base;
+    margin-bottom: 40px;
   }
 }
 
-
 .project-layout-horiz .col-1-4 {
-  @include bp-max-width($large) {
+  @include bp-min-width($small) {
     width: 50%;
   }
 
-  @include bp-max-width($small) {
-    width: 100%;
+  @include bp-min-width($large) {
+    width: 25%;
   }
 }
 
 .project-layout-horiz .project-credits {
   @include bp-max-width($small) {
-    margin-bottom: $base;
+    margin-bottom: 40px;
   }
 }
 
 .project-layout-horiz .project-info {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .project-layout-horiz .social-links {
-    position: absolute;
-    bottom: 0;
-    right: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
 }

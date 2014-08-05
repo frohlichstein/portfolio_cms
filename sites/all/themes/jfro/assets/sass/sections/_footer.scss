@@ -1,58 +1,24 @@
 .footer .wrapper {
-    padding: 12px 0;
-    border-top: 2px solid #000;
-    font-size: 12px;
-    text-align: center;
-    text-transform: uppercase;
+  padding: 12px 0;
+  border-top: 2px solid #000;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .footer .copyright {
+
+  @include bp-min-width($small) {
     float: left;
-    a {
-        margin-left: 20px;
-    }
+  }
+  
+  a {
+    margin-left: 20px;
+  }
 }
 
 .footer .contact-email {
+  @include bp-min-width($small) {
     float: right;
-}
-
-.back-to-top {
-    position: absolute;
-    top: -48px;
-    left: 50%;
-    width: 180px;
-    margin-left: -90px;
-    display: inline-block;
-    background: #62a7c1;
-    padding: 12px 0;
-    color: #fff;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.back-to-top:before {
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    content: "";
-    width: 0;
-    height: 0;
-    margin-left: -20px;
-    border-right: 20px solid transparent;
-    border-left: 20px solid transparent;
-    border-bottom: 20px solid #62a7c1;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-ms-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-}
-
-.back-to-top:hover {
-    background: #324e59;
-}
-
-.back-to-top:hover:before {
-    border-bottom-color: #324e59;
+  }
 }

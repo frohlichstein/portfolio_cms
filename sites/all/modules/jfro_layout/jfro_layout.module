@@ -159,7 +159,7 @@ function project_tags_nav(){
   $url_term = arg(1);
   $tree = taxonomy_get_tree(1);
   $output = '<ul class="cat-nav">';
-  $output .= '<li><a href="">View all</a></li>';
+  $output .= '<li><a href="/">View all</a></li>';
   foreach ($tree as $term) {
     if($url_term == strtolower($term->name)){
       $output .= '<li class="active"><a href="/projects/' . strtolower($term->name) . '">' . $term->name . '</a></li>';

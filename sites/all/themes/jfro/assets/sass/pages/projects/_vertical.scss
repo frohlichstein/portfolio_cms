@@ -2,7 +2,7 @@
 .project-layout-vert .grid {
   margin: 0;
   
-  @include bp-max-width($large) {
+  @include bp-min-width($small) {
     margin: 0 -10px;
   }  
 }
@@ -15,28 +15,17 @@
   }
 }
 
-.project-layout-horiz .project-images {
-  margin: 0 0 $base;
-
-  @include bp-max-width($large) {
-    margin: 0 -10px;
-  }
-}
-
 .project-layout-vert .project-description,
 .project-layout-vert .project-credits {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .project-layout-vert .project-credits,
 .project-layout-vert .project-awards {
-  @include bp-max-width($large) {
+  @include bp-max-min-width($large, $small) {
     float: left;
     width: 50%;
     padding: 0 $pad;
   }
 }
 
-.site-link {
-    margin-bottom: $base;
-}

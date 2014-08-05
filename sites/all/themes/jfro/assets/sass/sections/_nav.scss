@@ -1,64 +1,71 @@
 .nav a {
-    display: block;
-    padding: 12px 0;
-    font: 700 14px/1em $freight;
-	text-transform: uppercase;
+  display: block;
+  padding: 12px 0;
+  font: 700 14px/1em $freight;
+  text-transform: uppercase;
 }
 
 .menu {
-    float: left;
-    &.show {
-        display: block;
-    }
+  float: left;
+
+  &.show {
+    display: block;
+  }
 }
 
 .menu li {
-    float: left;
-    margin-right: 30px;
-    &:last-child {
-    	margin-right: 0;
-    	padding-right: 0;
-    }
+  float: left;
+  margin-right: 30px;
+ 
+  &:last-child {
+    margin-right: 0;
+    padding-right: 0;
+  }
 }
 
 .menu .active,
 .node-type-project .first a {
-	border-bottom: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 
 /** Cat Nav **/
 
 .nav .categories {
-    float: right;
+  float: right;
+
+  @include bp-max-width($small) {
+    display: none;
+  }
 }
 
 .nav .cat-toggle {
-    float: right;
-    font-size: 18px;
-    margin-left: 20px;
-    padding: 8px 0 0;
-    .cat-close {
-        display: none;
-    }
+  float: right;
+  font-size: 18px;
+  margin-left: 20px;
+  padding: 8px 0 0;
+
+  .cat-close {
+    display: none;
+  }
 }
 
 .cat-nav {
-    float: right;
-    display: none;
+  float: right;
+  display: none;
 }
 
 .cat-nav li {
-    position: relative;
-    float: left;
-    margin-left: 20px;
-    padding-left: 20px;
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  padding-left: 20px;
 }
 
 .cat-nav li:not(:first-child):after {
-    content: "//";
-    position: absolute;
-    top: 11px;
-    left: -4px;
-    font: 700 14px/1em "freight-sans-pro", Helvetica, Arial, sans-serif;
+  content: "//";
+  position: absolute;
+  top: 11px;
+  left: -4px;
+  font: $bold 14px/1em $freight;
 }

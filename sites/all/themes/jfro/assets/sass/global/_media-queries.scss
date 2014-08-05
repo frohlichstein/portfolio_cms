@@ -6,7 +6,6 @@ $small:   600px;
 $xsmall:  440px;
 $tiny:    350px;
 
-
 @mixin bp-max-width($point) {
 	@media (max-width: $point) { @content; }
 }
@@ -23,6 +22,6 @@ $tiny:    350px;
 	@media (min-width: $point) { @content; }
 }
 
-@mixin bp-max-min($max, $min) {
+@mixin bp-max-min-width($max, $min) {
 	@media (max-width: $max) and (min-width: $min) { @content; }
 }

@@ -10,7 +10,14 @@
     <?php print $main_menu; ?>
     <div class="categories">
       <a href="" class="cat-toggle"><span class="cat-open">+</span><span class="cat-close">-</span></a>
-      <?php print $cat_menu; ?>
+      <ul class="cat-nav">
+        <li><a href="/">View All</a></li>
+        <li><a href="/projects/design">Design</a></li>
+        <li><a href="/projects/icons">Icons</a></li>
+        <li><a href="/projects/illustration">Illustration</a></li>
+        <li><a href="/projects/art">Art</a></li>
+      </ul>
+      <?php // print $cat_menu; ?>
     </div>
   </div>
 </nav>
@@ -24,7 +31,7 @@
 
 <footer class="footer">
   <div class="wrapper">
-    <div class="copyright">Jason Frohlichstein &copy;<?php echo date('Y'); ?> <a href="">Web Developer</a>: Brad Sawicki</div>
     <div class="contact-email"><a href="">hello@jasonfrohlichstein.com</a></div>
+    <div class="copyright">Jason Frohlichstein &copy;<?php echo date('Y'); ?> <a href="">Web Developer</a>: Brad Sawicki</div>
   </div>
 </footer>

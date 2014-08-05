@@ -1,13 +1,10 @@
-/* Vendor Dependencies */
 @import "compass/css3";
 
-/* Global */
 @import "global/reset";
 @import "global/media-queries";
 @import "global/colors";
 @import "global/typography";
 @import "global/images";
-
 @import "global/mixins";
 @import "global/base";
 @import "global/buttons";
@@ -15,11 +12,6 @@
 @import "global/forms";
 @import "global/icons";
 
-
-/* Modules */
-
-
-/* Pages */
 @import "pages/home";
 @import "pages/info";
 @import "pages/user-login";
@@ -29,7 +21,6 @@
 @import "pages/projects/horizontal";
 @import "pages/projects/nav";
 
-/* Sections */
 @import "sections/header";
 @import "sections/nav";
 @import "sections/footer";

@@ -7,14 +7,18 @@
 }
 
 .logo .quote {
-    color: #aaa;
+  color: #aaa;
 	font: 400 italic 14px/1em $proxima;
 	text-transform: none;
+
+  @include bp-max-width($small) {
+    display: none;
+  }
 }
 
 .hello {
-    float: right;
-    color: #aaa;
-    font: 700 12px/1.25em $freight;
-    text-transform: uppercase;
+  float: right;
+  color: #aaa;
+  font: 700 12px/1.25em $freight;
+  text-transform: uppercase;
 }
