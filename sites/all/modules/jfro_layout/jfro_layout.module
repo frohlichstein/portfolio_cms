@@ -57,6 +57,7 @@ function jfro_layout_preprocess_node(&$variables) {
     $node->next = $controls['next'];
     $node->prev = $controls['prev'];
     $variables['project'] = new Model($node);
+    dpm($variables['project']);
   }
 }
 

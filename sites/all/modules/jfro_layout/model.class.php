@@ -11,8 +11,11 @@ class Meta
   public function generate_field_value($field, $args = NULL){
     $value = '';
     $field_array = $this->node->$field['field_name'];
+    // tags
+    if($field['field_name'] == 'field_tags'){
+      $value = !empty($field_array['und']) ? $field_array['und'] : '';
     // image widget
-    if(in_array($field['widget']['type'], array('image_image', 'image_miw'))){
+    }else if(in_array($field['widget']['type'], array('image_image', 'image_miw'))){
       $value = theme_image_style(array(
         'style_name' => $args[0],
         'path' => $field_array['und'][0]['uri'],
@@ -72,6 +75,7 @@ class Model extends Meta {
 
   function images(){
     $images = array();
+    if(empty($this->node->field_images['und'])){ return $images; }
     foreach($this->node->field_images['und'] as $image){
       $entity = array_shift(entity_load('field_collection_item', array($image['value'])));
       $image_markup_array = array(
