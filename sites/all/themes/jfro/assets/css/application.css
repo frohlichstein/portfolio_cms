@@ -86,12 +86,87 @@ a {
   *zoom: 1;
 }
 
+/*
+        This font software is the property of Commercial Type.
+
+        You may not modify the font software, use it on another website, or install it on a computer.
+
+        License information is available at http://commercialtype.com/eula
+        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+        Copyright (C) 2013 Schwartzco Inc.
+        License: 1408-ATZJBC     
+*/
+/*
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('/sites/all/themes/jfro/css/fonts/Graphik-Regular-Web.eot');
+  src: url('/sites/all/themes/jfro/css/fonts/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
+     url('/sites/all/themes/jfro/css/fonts/Graphik-Regular-Web.woff') format('woff'),
+     url('/sites/all/themes/jfro/css/fonts/Graphik-Regular-Web.ttf') format('truetype'),
+     url('/sites/all/themes/jfro/css/fonts/Graphik-Regular-Web.svg#Graphik Web') format('svg');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+*/
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('fonts/Graphik-Regular-Web.eot');
+  src: url('fonts/Graphik-Regular-Web.eot?#iefix') format("embedded-opentype"), url('fonts/Graphik-Regular-Web.woff') format("woff"), url('fonts/Graphik-Regular-Web.ttf') format("truetype"), url('fonts/Graphik-Regular-Web.svg#Graphik Web') format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.Graphik-Regular-Web {
+  font-family: 'Graphik Web';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/sites/all/themes/jfro/css/fonts/Graphik-RegularItalic-Web.eot);
+  src: url('fonts/Graphik-RegularItalic-Web.eot?#iefix') format("embedded-opentype"), url('fonts/Graphik-RegularItalic-Web.woff') format("woff"), url('fonts/Graphik-RegularItalic-Web.ttf') format("truetype"), url('fonts/Graphik-RegularItalic-Web.svg#Graphik Web') format("svg");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+.Graphik-RegularItalic-Web {
+  font-family: 'Graphik Web';
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('fonts/Graphik-Bold-Web.eot');
+  src: url('fonts/Graphik-Bold-Web.eot?#iefix') format("embedded-opentype"), url('fonts/Graphik-Bold-Web.woff') format("woff"), url('fonts/Graphik-Bold-Web.ttf') format("truetype"), url('fonts/Graphik-Bold-Web.svg#Graphik Web') format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.Graphik-Bold-Web {
+  font-family: 'Graphik Web';
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+/*
+$proxima: "proxima-nova", Helvetica, arial, sans-serif;
+$freight: "freight-sans-pro", Helvetica, Arial, sans-serif;
+*/
 body {
-  font: 400 1em/1.5em "proxima-nova", Helvetica, arial, sans-serif;
+  font: 400 1em/1.5em "Graphik Web", Helvetica, arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "freight-sans-pro", Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1;
 }
@@ -160,7 +235,7 @@ em {
 }
 
 .messages {
-  /*display: none;*/
+  display: none;
 }
 
 a {
@@ -312,7 +387,7 @@ a:hover {
 label {
   display: block;
   margin-bottom: 2px;
-  font-family: "proxima-nova", Helvetica, arial, sans-serif;
+  font-family: "Graphik Web", Helvetica, arial, sans-serif;
   font-size: 16px;
 }
 
@@ -326,7 +401,7 @@ select {
   padding: 8px 12px;
   background: rgba(170, 170, 170, 0.1);
   border: 1px solid #aaaaaa;
-  font: 400 1em/1em "proxima-nova", Helvetica, arial, sans-serif;
+  font: 400 1em/1em "Graphik Web", Helvetica, arial, sans-serif;
 }
 
 input[type="text"]:focus,
@@ -342,6 +417,10 @@ textarea {
 
 /** Buttons ============**/
 input[type="submit"], button {
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   padding: 0.5em 1em;
   border-radius: 4px;
   background: #000;
@@ -349,11 +428,7 @@ input[type="submit"], button {
   font-size: 18px;
   text-transform: uppercase;
   border: none;
-  font: 400 1em/1.5em "proxima-nova", Helvetica, arial, sans-serif;
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -ms-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
+  font: 400 1em/1.5em "Graphik Web", Helvetica, arial, sans-serif;
   cursor: pointer;
 }
 @media (max-width: 600px) {
@@ -530,7 +605,9 @@ input[type="submit"]:hover, button:hover {
 }
 
 .project-credits h3 {
-  font: 700 12px/1.4em "proxima-nova", Helvetica, arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 700;
 }
 
 /** PROJECT IMAGES ================**/
@@ -673,7 +750,9 @@ input[type="submit"]:hover, button:hover {
 
 .logo .quote {
   color: #aaa;
-  font: 400 italic 14px/1em "proxima-nova", Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
   text-transform: none;
 }
 @media (max-width: 600px) {
@@ -685,14 +764,18 @@ input[type="submit"]:hover, button:hover {
 .hello {
   float: right;
   color: #aaa;
-  font: 700 12px/1.25em "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.25em;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .nav a {
   display: block;
   padding: 12px 0;
-  font: 700 14px/1em "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -754,7 +837,9 @@ input[type="submit"]:hover, button:hover {
   position: absolute;
   top: 11px;
   left: -4px;
-  font: 700 14px/1em "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
 }
 
 .footer .wrapper {

@@ -1,0 +1,86 @@
+/*
+        This font software is the property of Commercial Type.
+
+        You may not modify the font software, use it on another website, or install it on a computer.
+
+        License information is available at http://commercialtype.com/eula
+        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+        Copyright (C) 2013 Schwartzco Inc.
+        License: 1408-ATZJBC     
+*/
+
+
+/*
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('/sites/all/themes/jfro/css/fonts/Graphik-Regular-Web.eot');
+  src: url('/sites/all/themes/jfro/css/fonts/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
+     url('/sites/all/themes/jfro/css/fonts/Graphik-Regular-Web.woff') format('woff'),
+     url('/sites/all/themes/jfro/css/fonts/Graphik-Regular-Web.ttf') format('truetype'),
+     url('/sites/all/themes/jfro/css/fonts/Graphik-Regular-Web.svg#Graphik Web') format('svg');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+*/
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: font-url('Graphik-Regular-Web.eot');
+  src: font-url('Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
+     font-url('Graphik-Regular-Web.woff') format('woff'),
+     font-url('Graphik-Regular-Web.ttf') format('truetype'),
+     font-url('Graphik-Regular-Web.svg#Graphik Web') format('svg');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Regular-Web {
+  font-family: 'Graphik Web';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: font-url('/sites/all/themes/jfro/css/fonts/Graphik-RegularItalic-Web.eot');
+  src: font-url('Graphik-RegularItalic-Web.eot?#iefix') format('embedded-opentype'),
+     font-url('Graphik-RegularItalic-Web.woff') format('woff'),
+     font-url('Graphik-RegularItalic-Web.ttf') format('truetype'),
+     font-url('Graphik-RegularItalic-Web.svg#Graphik Web') format('svg');
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.Graphik-RegularItalic-Web {
+  font-family: 'Graphik Web';
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: font-url('Graphik-Bold-Web.eot');
+  src: font-url('Graphik-Bold-Web.eot?#iefix') format('embedded-opentype'),
+     font-url('Graphik-Bold-Web.woff') format('woff'),
+     font-url('Graphik-Bold-Web.ttf') format('truetype'),
+     font-url('Graphik-Bold-Web.svg#Graphik Web') format('svg');
+  font-weight:  700;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Bold-Web {
+  font-family: 'Graphik Web';
+  font-weight:  700;
+  font-style:   normal;
+  font-stretch: normal;
+}
+

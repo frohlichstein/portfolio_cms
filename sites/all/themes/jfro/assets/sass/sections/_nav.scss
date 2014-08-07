@@ -1,7 +1,9 @@
 .nav a {
   display: block;
   padding: 12px 0;
-  font: 700 14px/1em $freight;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: $bold;
   text-transform: uppercase;
 }
 
@@ -67,5 +69,7 @@
   position: absolute;
   top: 11px;
   left: -4px;
-  font: $bold 14px/1em $freight;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: $bold;
 }

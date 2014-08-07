@@ -8,7 +8,9 @@
 
 .logo .quote {
   color: #aaa;
-	font: 400 italic 14px/1em $proxima;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: $book;
 	text-transform: none;
 
   @include bp-max-width($small) {
@@ -19,6 +21,8 @@
 .hello {
   float: right;
   color: #aaa;
-  font: 700 12px/1.25em $freight;
+  font-size: 12px;
+  line-height: 1.25em;
+  font-weight: $bold;
   text-transform: uppercase;
 }

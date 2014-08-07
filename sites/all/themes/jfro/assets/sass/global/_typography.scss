@@ -1,6 +1,8 @@
-
+/*
 $proxima: "proxima-nova", Helvetica, arial, sans-serif;
 $freight: "freight-sans-pro", Helvetica, Arial, sans-serif;
+*/
+$sans: "Graphik Web", Helvetica, arial, sans-serif;
 
 $light: 300;
 $book:  400;
@@ -10,11 +12,10 @@ $bold:  700;
 $base:  22px;
 
 body {
-  font: $book 1em/1.5em $proxima;
+  font: $book 1em/1.5em $sans;
 }
 
 h1,h2,h3,h4,h5 {
-  font-family: $freight;
 	font-weight: $bold;
 	line-height: 1;
 }

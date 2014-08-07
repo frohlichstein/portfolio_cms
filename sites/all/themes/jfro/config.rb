@@ -6,6 +6,7 @@ css_dir = "assets/css"
 sass_dir = "assets/sass"
 images_dir = "assets/images"
 javascripts_dir = "assets/js"
+# fonts_dir = "assets"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
