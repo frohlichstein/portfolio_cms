@@ -12,7 +12,7 @@
 }
 
 .project-description p {
-  line-height: 1.3em;
+  line-height: 1.3;
   margin-bottom: 18px;
 
   &:last-of-type {
@@ -37,13 +37,19 @@
 .project-credits p,
 .project-awards p {
   font-size: 12px;
-  line-height: 1.4em;
+  line-height: 18px;
 }
 
 .project-credits h3 {
   font-size: 12px;
-  line-height: 1.4;
+  line-height: 18px;
   font-weight: $bold;
+  letter-spacing: 0.025em;
+}
+
+.project-credits strong,
+.project-awards strong {
+  letter-spacing: 0.025em;
 }
 
 
