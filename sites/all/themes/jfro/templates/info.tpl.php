@@ -1,8 +1,8 @@
 <div class="grid info-grid">
     
-    <div class="col-1-4">
+    <div class="col-1-4 block-jason">
         <img src="/sites/all/themes/jfro/assets/images/pic-jason.jpg" alt="" />
-    </div><!-- c1 -->
+    </div>
     
     <div class="col-1-4 block-contact">
         <h2 class="title">Contact:</h2>

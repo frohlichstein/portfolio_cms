@@ -450,6 +450,12 @@ input[type="submit"]:hover, button:hover {
   line-height: 20px;
 }
 
+@media (max-width: 600px) {
+  .block-jason {
+    display: none;
+  }
+}
+
 .block-exhibition h3 {
   font-style: italic;
 }

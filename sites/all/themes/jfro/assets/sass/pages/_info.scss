@@ -29,6 +29,12 @@
   line-height: 20px;
 }
 
+.block-jason {
+  @include bp-max-width($small) {
+    display: none;
+  }
+}
+
 .block-exhibition h3 {
   font-style: italic;
 }
