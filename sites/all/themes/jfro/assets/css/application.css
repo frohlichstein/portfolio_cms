@@ -854,23 +854,29 @@ input[type="submit"]:hover, button:hover {
 }
 
 .footer .wrapper {
-  padding: 12px 0;
+  padding: 22px 0;
   border-top: 2px solid #000;
-  font-size: 12px;
+  font-size: 11px;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.025em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 740px) {
   .footer .copyright {
     float: left;
   }
 }
-.footer .copyright a {
+.footer .copyright .brad-link {
   margin-left: 20px;
 }
+@media (max-width: 600px) {
+  .footer .copyright .brad-link {
+    display: block;
+  }
+}
 
-@media (min-width: 600px) {
+@media (min-width: 740px) {
   .footer .contact-email {
     float: right;
   }

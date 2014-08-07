@@ -1,23 +1,28 @@
 .footer .wrapper {
-  padding: 12px 0;
+  padding: $base 0;
   border-top: 2px solid #000;
-  font-size: 12px;
+  font-size: 11px;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.025em;
 }
 
 .footer .copyright {
-  @include bp-min-width($small) {
+  @include bp-min-width($medium) {
     float: left;
   }
   
-  a {
+  .brad-link {
     margin-left: 20px;
+
+    @include bp-max-width($small) {
+      display: block;
+    }
   }
 }
 
 .footer .contact-email {
-  @include bp-min-width($small) {
+  @include bp-min-width($medium) {
     float: right;
   }
 }

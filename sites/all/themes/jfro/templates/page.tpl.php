@@ -31,7 +31,7 @@
 
 <footer class="footer">
   <div class="wrapper">
-    <div class="contact-email"><a href="">hello@jasonfrohlichstein.com</a></div>
-    <div class="copyright">Jason Frohlichstein &copy;<?php echo date('Y'); ?> <a href="">Web Developer</a>: Brad Sawicki</div>
+    <div class="contact-email"><a href="">hello@frohlichsteininc.com</a></div>
+    <div class="copyright">The Studio of Jason Frohlichstein &copy;<?php echo date('Y'); ?> <span class="brad-link"><a href="">Web Developer</a>: Brad Sawicki</span></div>
   </div>
 </footer>
