@@ -56,7 +56,7 @@
   <section class="col-3-4">
     <div class="project-images">
       <?php if($project->video): ?>
-      <div class="video"><?php print $project->video; ?></div>
+      <div class="video image image-size-100"><?php print $project->video; ?></div>
       <?php endif; ?>
 
       <?php if($project->has_images): ?>

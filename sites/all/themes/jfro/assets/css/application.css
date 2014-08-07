@@ -766,9 +766,10 @@ input[type="submit"]:hover, button:hover {
 
 .logo .quote {
   color: #aaa;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1;
   font-weight: 400;
+  font-style: italic;
   text-transform: none;
 }
 @media (max-width: 600px) {
@@ -782,7 +783,6 @@ input[type="submit"]:hover, button:hover {
   color: #aaa;
   font-size: 12px;
   line-height: 1.25em;
-  font-weight: 700;
   text-transform: uppercase;
 }
 
