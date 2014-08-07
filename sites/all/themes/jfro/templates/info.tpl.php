@@ -159,7 +159,7 @@
 
     <div class="col-1-4">
         <h2 class="title">Friends & Collaborators:</h2>
-        <ul>
+        <ul class="friends-list">
             <li><a href="">The United States of Kyle Louis Fletcher</a></li>
             <li><a href="">Kyle Poff</a></li>
             <li><a href="">Brad Sawicki</a></li>
