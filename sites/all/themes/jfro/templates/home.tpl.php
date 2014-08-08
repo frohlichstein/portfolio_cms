@@ -1,4 +1,4 @@
-<div class="grid">
+<div class="grid project-grid">
 <?php foreach($projects as $project): ?>
 <div class="col-1-4 projects thumb">
   <a href="<?php print $project->path ?>">

@@ -321,6 +321,32 @@ a:hover {
   }
 }
 
+@media (min-width: 600px) {
+  .project-grid {
+    *zoom: 1;
+    margin: 0 -10px;
+  }
+  .project-grid:before, .project-grid:after {
+    content: " ";
+    display: block;
+  }
+  .project-grid:after {
+    clear: both;
+  }
+}
+@media (min-width: 600px) {
+  .project-grid .col-1-4 {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+  }
+}
+@media (min-width: 880px) {
+  .project-grid .col-1-4 {
+    width: 25%;
+  }
+}
+
 /** PROJECT IMAGE GRID ==========**/
 .project-images {
   *zoom: 1;
@@ -534,7 +560,12 @@ input[type="submit"]:hover, button:hover {
 }
 
 @media (max-width: 600px) {
-  .block-jason,
+  .block-jason {
+    display: none;
+  }
+}
+
+@media (max-width: 880px) {
   .block-instagram {
     display: none;
   }

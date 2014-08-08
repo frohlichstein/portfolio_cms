@@ -41,9 +41,14 @@
   }
 }
 
-.block-jason,
-.block-instagram {
+.block-jason {
   @include bp-max-width($small) {
+    display: none;
+  }
+}
+
+.block-instagram {
+  @include bp-max-width($large) {
     display: none;
   }
 }
