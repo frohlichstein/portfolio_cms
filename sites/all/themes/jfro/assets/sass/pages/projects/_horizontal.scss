@@ -7,12 +7,17 @@
 }
 
 .project-layout-horiz .col-1-4 {
-  @include bp-min-width($small) {
+  @include bp-max-min-width($large, $small) {
+    float: left;
     width: 50%;
-  }
-
-  @include bp-min-width($large) {
-    width: 25%;
+    
+    &.project-credits {
+      padding-right: $pad;
+    }
+    
+    &.project-awards {
+      padding-left: $pad;
+    }
   }
 }
 
@@ -23,6 +28,7 @@
 }
 
 .project-layout-horiz .project-info {
+  @include cf;
   margin-bottom: 60px;
 }
 

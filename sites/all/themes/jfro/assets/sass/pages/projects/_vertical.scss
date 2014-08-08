@@ -2,7 +2,7 @@
 .project-layout-vert .grid {
   margin: 0;
   
-  @include bp-min-width($small) {
+  @include bp-max-min-width($large, $small) {
     margin: 0 -10px;
   }  
 }
@@ -16,7 +16,8 @@
 }
 
 .project-layout-vert .project-description,
-.project-layout-vert .project-credits {
+.project-layout-vert .project-credits,
+.project-layout-vert .project-awards {
   margin-bottom: 40px;
 }
 
