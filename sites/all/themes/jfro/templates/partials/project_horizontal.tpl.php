@@ -54,7 +54,11 @@
 
   <section class="project-images">
     <?php if($project->video): ?>
-    <div class="video image image-size-100"><?php print $project->video; ?></div>
+    <div class="video image image-size-100">
+      <div class="video-wrap">
+        <?php print $project->video; ?>
+      </div>
+    </div>
     <?php endif; ?>
 
     <?php if($project->has_images): ?>
