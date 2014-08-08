@@ -71,10 +71,6 @@
       window.open('http://www.facebook.com/sharer.php?s=100&p[url]=' + url, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width='+winWidth+',height='+winHeight);
     }
   
-  	$(window).on('resize', function() {
-	    resize_thumbs();
-  	});
-  	
   	random_blurb();
   	category_toggle();
   	share_toggle();
