@@ -3,6 +3,10 @@
 	position: relative;
 	max-width: 1600px;
 	margin: 0 30px;
+	
+	@include bp-min-width(1660px) {
+  	margin: 0 auto;
+	}
 }
 
 .header .wrapper {
