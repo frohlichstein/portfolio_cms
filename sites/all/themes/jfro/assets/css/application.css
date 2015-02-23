@@ -693,6 +693,10 @@ input[type="submit"]:hover, button:hover {
   padding: 0 10px;
 }
 
+.project-images img {
+  width: 100%;
+}
+
 .project-layout-vert .grid {
   margin: 0;
 }

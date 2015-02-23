@@ -13,8 +13,8 @@
       <ul class="cat-nav">
         <li><a href="/">View All</a></li>
         <li><a href="/projects/design">Design</a></li>
-        <li><a href="/projects/icons">Icons</a></li>
         <li><a href="/projects/illustration">Illustration</a></li>
+        <li><a href="/projects/icons">Icons</a></li>
         <li><a href="/projects/art">Art</a></li>
       </ul>
       <?php // print $cat_menu; ?>
