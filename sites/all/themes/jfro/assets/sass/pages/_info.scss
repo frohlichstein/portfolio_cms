@@ -16,12 +16,6 @@
   margin-bottom: 10px;
 }
 
-.info-grid p,
-.info-grid ul {
-  font-size: 14px;
-  line-height: 20px;
-}
-
 .info-list li {
   margin-bottom: $base;
 
@@ -31,9 +25,14 @@
 }
 
 .info-list {
-  
   h3 {
+    font-size: 14px;
     margin-bottom: 2px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
   }
   
   .meta-info {

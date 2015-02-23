@@ -214,8 +214,13 @@ em {
 .wrapper {
   *zoom: 1;
   position: relative;
-  max-width: 1600px;
+  /* 	max-width: 1600px; */
   margin: 0 30px;
+  /*
+  	@include bp-min-width(1660px) {
+    	margin: 0 auto;
+  	}
+  */
 }
 .wrapper:before, .wrapper:after {
   content: " ";
@@ -223,11 +228,6 @@ em {
 }
 .wrapper:after {
   clear: both;
-}
-@media (min-width: 1660px) {
-  .wrapper {
-    margin: 0 auto;
-  }
 }
 
 .header .wrapper {
@@ -563,12 +563,6 @@ input[type="submit"]:hover, button:hover {
   margin-bottom: 10px;
 }
 
-.info-grid p,
-.info-grid ul {
-  font-size: 14px;
-  line-height: 20px;
-}
-
 .info-list li {
   margin-bottom: 22px;
 }
@@ -577,7 +571,12 @@ input[type="submit"]:hover, button:hover {
 }
 
 .info-list h3 {
+  font-size: 14px;
   margin-bottom: 2px;
+}
+.info-list p {
+  font-size: 14px;
+  line-height: 20px;
 }
 .info-list .meta-info {
   font-size: 12px;
@@ -936,7 +935,7 @@ input[type="submit"]:hover, button:hover {
   font-size: 11px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.2em;
 }
 
 @media (min-width: 740px) {
