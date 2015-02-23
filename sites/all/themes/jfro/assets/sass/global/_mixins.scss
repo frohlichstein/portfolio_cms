@@ -1,3 +1,4 @@
+// Clearfix
 @mixin cf {
   &:before, &:after {
     content: " ";
@@ -9,43 +10,46 @@
   *zoom:1;
 }
 
-@mixin placeholder {
-  ::-webkit-input-placeholder {@content}
-  :-moz-placeholder {@content}
-  ::-moz-placeholder {@content}
-  :-ms-input-placeholder {@content}  
+
+// GLOBAL TRANSITION
+@mixin global-transition {
+	transition: all 0.15s ease-in;
 }
 
-// ANIMATIONS
-@mixin keyframes($name) {
-  @-webkit-keyframes $name { @content; }
-  @-moz-keyframes $name { @content; }
-  @-o-keyframes $name { @content; }
-  @-keyframes $name { @content; }
+
+// Site Mixins
+
+@mixin width-10-col {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-@mixin animation($content) {
-  -webkit-animation: $content;
-  -moz-animation: $content;
-  -o-animation: $content;
-  animation: $content;
+@mixin width-8-col {
+  max-width: 792px;
+  margin: 0 auto;
 }
+
+@mixin width-6-col {
+  max-width: 584px;
+  margin: 0 auto;
+}
+
 
 // CENTER ALIGN
 @mixin vertical-center($position) {
-  @include translateY(-50%);
+  transform: translateY(-50%);
   position: $position;
   top: 50%;
 }
 
 @mixin horizontal-center($position) {
-  @include translateX(-50%);
+  transform: translateX(-50%);
   position: $position;
   left: 50%;
 }
 
 @mixin absolute-center {
-  @include translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -68,6 +72,7 @@
   line-height: calculateRem($size);
 }
 
+
 // TRIANGLE
 @mixin down-triangle($size, $color) {
   width: 0;
@@ -83,4 +88,20 @@
   border-left: $size solid transparent;
   border-right: $size solid transparent;
   border-bottom: $size solid $color;
+}
+
+
+// ANIMATIONS
+@mixin keyframes($name) {
+  @-webkit-keyframes $name { @content; }
+  @-moz-keyframes $name { @content; }
+  @-o-keyframes $name { @content; }
+  @-keyframes $name { @content; }
+}
+
+@mixin animation($content) {
+  -webkit-animation: $content;
+  -moz-animation: $content;
+  -o-animation: $content;
+  animation: $content;
 }

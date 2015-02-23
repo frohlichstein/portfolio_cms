@@ -26,17 +26,16 @@
 
 .info-list {
   h3 {
-    font-size: 14px;
+    @include font-size(14px);
     margin-bottom: 2px;
   }
 
   p {
-    font-size: 14px;
-    line-height: 20px;
+    @include font-size(14px);
+    @include line-height(20px);
   }
   
   .meta-info {
-    font-size: 12px;
     font-style: italic;
   }
 }
@@ -45,6 +44,10 @@
   @include bp-max-width($small) {
     display: none;
   }
+}
+
+.block-found ul {
+  @include font-size(15px);
 }
 
 .block-instagram {
@@ -66,6 +69,6 @@
 }
 
 .friends-list li {
-  font-size: 14px;
-  line-height: 20px;
+  @include font-size(14px);
+  @include line-height(20px);
 }

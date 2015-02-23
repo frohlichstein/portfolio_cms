@@ -1,12 +1,12 @@
 @import "compass/css3";
 
 @import "global/reset";
-@import "global/fonts";
+@import "global/mixins";
 @import "global/media-queries";
 @import "global/colors";
+@import "global/fonts";
 @import "global/typography";
 @import "global/images";
-@import "global/mixins";
 @import "global/base";
 @import "global/buttons";
 @import "global/grid";

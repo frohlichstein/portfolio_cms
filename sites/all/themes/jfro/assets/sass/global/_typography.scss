@@ -21,25 +21,24 @@ h1,h2,h3,h4,h5 {
 }
 
 h1 {
-  font-size: 48px;
+  @include font-size(48px);
   line-height: 60px;
 }
 
 h2 {
-  font-size: 24px;
+  @include font-size(24px);
 }
 
 h3 {
-	font-size: 16px;
+  @include font-size(16px);
 }
 
 h4 {
-	font-size: 15px;
+  @include font-size(15px);
 }
 
 p {
-	font-size: 15px;
-	line-height: $base;
+  @include font-size(15px);
 }
 
 strong {
@@ -51,11 +50,11 @@ em {
 }
 
 .project-title {
+  @include font-size(28px);
   margin-bottom: 6px;
-  font-size: 28px;
   line-height: 1;
 }
 
 .meta-info {
-  font-size: 12px;
+  @include font-size(12px);
 }

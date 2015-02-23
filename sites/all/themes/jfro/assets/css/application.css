@@ -173,24 +173,28 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 48px;
+  font-size: 3rem;
   line-height: 60px;
 }
 
 h2 {
   font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h3 {
   font-size: 16px;
+  font-size: 1rem;
 }
 
 h4 {
   font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 p {
   font-size: 15px;
-  line-height: 22px;
+  font-size: 0.9375rem;
 }
 
 strong {
@@ -202,13 +206,15 @@ em {
 }
 
 .project-title {
-  margin-bottom: 6px;
   font-size: 28px;
+  font-size: 1.75rem;
+  margin-bottom: 6px;
   line-height: 1;
 }
 
 .meta-info {
   font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .wrapper {
@@ -413,13 +419,14 @@ a:hover {
 }
 .form-item .description {
   font-size: 12px;
+  font-size: 0.75rem;
 }
 
 label {
+  font-size: 16px;
+  font-size: 1rem;
   display: block;
   margin-bottom: 2px;
-  font-family: "Graphik Web", Helvetica, arial, sans-serif;
-  font-size: 16px;
 }
 
 input[type="text"],
@@ -530,10 +537,6 @@ input[type="submit"]:hover, button:hover {
   text-align: center;
 }
 .thumb .title-block h2 {
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%);
   position: absolute;
   top: 50%;
@@ -572,14 +575,16 @@ input[type="submit"]:hover, button:hover {
 
 .info-list h3 {
   font-size: 14px;
+  font-size: 0.875rem;
   margin-bottom: 2px;
 }
 .info-list p {
   font-size: 14px;
+  font-size: 0.875rem;
   line-height: 20px;
+  line-height: 1.25rem;
 }
 .info-list .meta-info {
-  font-size: 12px;
   font-style: italic;
 }
 
@@ -587,6 +592,11 @@ input[type="submit"]:hover, button:hover {
   .block-jason {
     display: none;
   }
+}
+
+.block-found ul {
+  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 @media (max-width: 880px) {
@@ -608,7 +618,9 @@ input[type="submit"]:hover, button:hover {
 
 .friends-list li {
   font-size: 14px;
+  font-size: 0.875rem;
   line-height: 20px;
+  line-height: 1.25rem;
 }
 
 #user-login {
@@ -666,12 +678,16 @@ input[type="submit"]:hover, button:hover {
 .project-credits p,
 .project-awards p {
   font-size: 12px;
+  font-size: 0.75rem;
   line-height: 18px;
+  line-height: 1.125rem;
 }
 
 .project-credits h3 {
   font-size: 12px;
+  font-size: 0.75rem;
   line-height: 18px;
+  line-height: 1.125rem;
   font-weight: 700;
   letter-spacing: 0.025em;
 }
@@ -828,15 +844,17 @@ input[type="submit"]:hover, button:hover {
 }
 
 .logo {
-  float: left;
   font-size: 16px;
+  font-size: 1rem;
+  float: left;
   line-height: 1;
   text-transform: uppercase;
 }
 
 .logo .quote {
-  color: #aaa;
   font-size: 13px;
+  font-size: 0.8125rem;
+  color: #aaa;
   line-height: 1;
   font-weight: 400;
   font-style: italic;
@@ -849,10 +867,11 @@ input[type="submit"]:hover, button:hover {
 }
 
 .hello {
+  font-size: 12px;
+  font-size: 0.75rem;
   float: right;
   color: #aaa;
-  font-size: 12px;
-  line-height: 1.25em;
+  line-height: 1.25;
   text-transform: uppercase;
 }
 
@@ -930,9 +949,10 @@ input[type="submit"]:hover, button:hover {
 }
 
 .footer .wrapper {
+  font-size: 11px;
+  font-size: 0.6875rem;
   padding: 22px 0;
   border-top: 2px solid #000;
-  font-size: 11px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;

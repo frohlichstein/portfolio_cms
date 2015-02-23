@@ -36,13 +36,13 @@
 
 .project-credits p,
 .project-awards p {
-  font-size: 12px;
-  line-height: 18px;
+  @include font-size(12px);
+  @include line-height(18px);
 }
 
 .project-credits h3 {
-  font-size: 12px;
-  line-height: 18px;
+  @include font-size(12px);
+  @include line-height(18px);
   font-weight: $bold;
   letter-spacing: 0.025em;
 }

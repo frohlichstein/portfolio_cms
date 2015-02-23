@@ -1,7 +1,7 @@
 .footer .wrapper {
+  @include font-size(11px);
   padding: $base 0;
   border-top: 2px solid #000;
-  font-size: 11px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;

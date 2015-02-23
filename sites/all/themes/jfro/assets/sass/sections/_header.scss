@@ -1,14 +1,14 @@
 
 .logo {
+  @include font-size(16px);
 	float: left;
-	font-size: 16px;
 	line-height: 1;
 	text-transform: uppercase;
 }
 
 .logo .quote {
+  @include font-size(13px);
   color: #aaa;
-  font-size: 13px;
   line-height: 1;
   font-weight: $book;
   font-style: italic;
@@ -20,9 +20,9 @@
 }
 
 .hello {
+  @include font-size(12px);
   float: right;
   color: #aaa;
-  font-size: 12px;
-  line-height: 1.25em;
+  line-height: 1.25;
   text-transform: uppercase;
 }
