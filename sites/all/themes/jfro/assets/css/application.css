@@ -563,6 +563,12 @@ input[type="submit"]:hover, button:hover {
   margin-bottom: 10px;
 }
 
+.info-grid p,
+.info-grid ul {
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .info-list li {
   margin-bottom: 22px;
 }
@@ -572,10 +578,6 @@ input[type="submit"]:hover, button:hover {
 
 .info-list h3 {
   margin-bottom: 2px;
-}
-.info-list p {
-  font-size: 14px;
-  line-height: 20px;
 }
 .info-list .meta-info {
   font-size: 12px;
