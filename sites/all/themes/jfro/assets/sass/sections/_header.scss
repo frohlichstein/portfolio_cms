@@ -33,6 +33,6 @@
 .hello {
   @include font-size(12px);
   float: right;
-  line-height: 1.25;
+  line-height: 1.5;
   text-transform: uppercase;
 }
