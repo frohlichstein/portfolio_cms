@@ -6,8 +6,19 @@
 	text-transform: uppercase;
 }
 
+.logo .mark {
+  display: inline;
+  margin-right: 6px;
+  
+  img {
+    width: 168px;
+  }
+}
+
 .logo .quote {
   @include font-size(13px);
+  display: inline;
+  vertical-align: -4px;
   color: #aaa;
   line-height: 1;
   font-weight: $book;

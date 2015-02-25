@@ -851,9 +851,19 @@ input[type="submit"]:hover, button:hover {
   text-transform: uppercase;
 }
 
+.logo .mark {
+  display: inline;
+  margin-right: 6px;
+}
+.logo .mark img {
+  width: 168px;
+}
+
 .logo .quote {
   font-size: 13px;
   font-size: 0.8125rem;
+  display: inline;
+  vertical-align: -4px;
   color: #aaa;
   line-height: 1;
   font-weight: 400;
