@@ -22,7 +22,6 @@
 .hello {
   @include font-size(12px);
   float: right;
-  color: #aaa;
   line-height: 1.25;
   text-transform: uppercase;
 }

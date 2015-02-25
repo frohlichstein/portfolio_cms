@@ -22,6 +22,15 @@
   </div>
 </nav>
 
+<nav class="fixed-nav">
+  <div class="wrapper">
+    <div class="eff">F.</div>
+    <?php print $main_menu; ?>
+    <a href="" class="scroll-top"></a>
+    <a href="mailto:hello@frohlichsteininc.com" class="hello">Hello</a>
+  </div>
+</nav>
+
 <section id="main" class="main">
   <div class="wrapper">
     <?php print $messages; ?>

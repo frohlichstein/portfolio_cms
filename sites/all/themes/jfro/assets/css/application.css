@@ -871,19 +871,8 @@ input[type="submit"]:hover, button:hover {
   font-size: 12px;
   font-size: 0.75rem;
   float: right;
-  color: #aaa;
   line-height: 1.25;
   text-transform: uppercase;
-}
-
-.nav a {
-  display: block;
-  padding: 12px 0;
-  font-size: 13px;
-  line-height: 1;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 .menu {
@@ -902,6 +891,17 @@ input[type="submit"]:hover, button:hover {
   padding-right: 0;
 }
 
+.menu a {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  display: block;
+  padding: 12px 0;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .menu .active,
 .node-type-project .first a {
   border-bottom: 2px solid #000;
@@ -918,8 +918,9 @@ input[type="submit"]:hover, button:hover {
 }
 
 .nav .cat-toggle {
-  float: right;
   font-size: 18px;
+  font-size: 1.125rem;
+  float: right;
   margin-left: 20px;
   padding: 8px 0 0;
 }
@@ -930,6 +931,17 @@ input[type="submit"]:hover, button:hover {
 .cat-nav {
   float: right;
   display: none;
+}
+
+.cat-nav a {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  display: block;
+  padding: 12px 0;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .cat-nav li {
@@ -947,6 +959,56 @@ input[type="submit"]:hover, button:hover {
   font-size: 14px;
   line-height: 1;
   font-weight: 700;
+}
+
+.fixed-nav {
+  transition: all 0.15s ease-in;
+  -webkit-transform: translateY(-41px);
+  -moz-transform: translateY(-41px);
+  -ms-transform: translateY(-41px);
+  -o-transform: translateY(-41px);
+  transform: translateY(-41px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background: rgba(255, 255, 255, 0.8);
+}
+.fixed-nav.is-active {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.fixed-nav .wrapper {
+  border-top: 2px solid #000;
+}
+
+.fixed-nav .eff {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  float: left;
+  margin-right: 30px;
+  padding: 12px 0;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.fixed-nav .hello {
+  padding: 12px 0;
+}
+
+.fixed-nav .scroll-top {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 21px;
+  height: 12px;
+  background: url(../images/sprite.svg) no-repeat 0 -23px;
 }
 
 .footer .wrapper {
