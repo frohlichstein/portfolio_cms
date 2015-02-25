@@ -1,14 +1,11 @@
 .wrapper {
   @include cf;
 	position: relative;
-/* 	max-width: 1600px; */
-	margin: 0 30px;
+	margin: 0 56px;
 	
-/*
-	@include bp-min-width(1660px) {
-  	margin: 0 auto;
+	@include bp-max-width($large) {
+  	margin: 0 30px;
 	}
-*/
 }
 
 .header .wrapper {
